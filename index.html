@@ -9,32 +9,38 @@
 </head>
 <body>
     <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid"> 
+              <img src="./img/Logosaintcoffepng.png" class="navbar-imagen" alt="logo" width="100%" height="200px">
+             </div>
+        </nav>
         <div class="navbar">
-            <nav class="navbar navbar-expand-lg bg-light">
-              <div class="container-fluid">
-                <p>logo</p>
-              </div>
+            <nav>
+                <input type="checkbox" id="menu">  
+                <label for="menu"> ☰ </label>
+                <ul>
+                  <li><a href="#">Inicio</a></li>
+                  <li> 
+                    <div class="dropdown">
+                        <a href="#">Locales</a>
+                        <div class="dropdown-content">
+                             <a href="#">Cafe al paso</a>
+                             <a href="#">Cafe especialidad</a>
+                        </div>
+                    </div>
+                </li>
+                  <li>
+                    <div class="dropdown">
+                        <a href="#">El arte del cafe</a>
+                        <div class="dropdown-content">
+                             <a href="#">Metodos del filtrado</a>
+                             <a href="#">Granos</a>
+                        </div>
+                    </div>
+                    </li>
+                  <li> <a href="#">Sobre nosotros</a></li>
+                </ul>
             </nav>
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">Inicio</a>
-                </div>
-              </nav>
-              <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Locales</a>
-                </div>
-              </nav>
-              <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">El arte del cafe</a>
-                </div>
-              </nav>
-              <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Sobre Nosotros</a>
-                </div>
-              </nav>
         </div>
     </header>
    <section id="section">
@@ -61,10 +67,8 @@
                 mejores cafeterias
             </p>
         </div>
-        <div class="section-interno-derecha">
-            <p>
-                cafe de especialidad
-            </p>
+        <div>
+            <a href="#"><button type="button"  class="section-boton"> cafe de especialidad</button></a>
         </div>
     </div>
 
@@ -83,10 +87,8 @@
                 prioridad
              </p>
         </div>
-             <div class="section-interno-derecha">
-                <p>
-                    cafe al paso
-                </p>
+            <div>
+               <a href="#"> <button type="button"  class="section-boton"> cafe al paso</button></a>
             </div>
    </div>
    
@@ -112,7 +114,7 @@
             </div>
         </div>
         <div class="article-abajo-boton">
-            <button type="button" class="article-boton">El arte del cafe</button>
+            <a href="#"><button type="button" class="article-boton">El arte del cafe</button></a>
         </div>
    </article>
 
@@ -122,7 +124,7 @@
         </div>
         <div class="footer-medio-abajo">
             <div class="footer-medio-izquierda">
-                <button type="button" class="footer-boton">Sobre nosotros</button>
+                <a href="#"><button type="button" class="footer-boton">Sobre nosotros</button></a>
             </div>
             <div class="footer-medio-derecha">
                 <p>Conoce a las personas que hicieron</p>
