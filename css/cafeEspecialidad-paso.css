@@ -193,3 +193,52 @@ header{
     color: #FFFFFF;
     background-color: #00A4BD;
   }
+/* aca termino el navbar */
+
+#section{
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+  padding: 5px;
+}
+.section-izquierda{
+    margin: 50px;
+    padding: 50px;
+    background-color: grey;
+    border-radius: 30px;
+    width: 30%;
+    height: 100px;
+}
+.section-derecha{
+    margin: 50px;
+    padding: 50px;
+    background-color: grey;
+    border-radius: 30px;
+    width: 30%;
+    height: 100px;
+}
+
+.card-group{
+  display: flex;
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 20px;
+    /* background: beige; */
+  width: 30%;
+  border: 5px solid;
+}
+.card-body{
+  margin: 20px;
+  padding: 10px;
+  text-align: right;
+  width: 30%;
+}
+.boton-bootstrap{
+  margin: 20px;
+  padding: 10px;
+}
