@@ -1,218 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/metodosfiltrado.css">
-  <title>MetodosFiltrado</title>
-</head>
-
-<body>
-  
-  <header>
-    <div class="navbar">
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <p>logo</p>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Inicio</a>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Locales</a>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">El arte del cafe</a>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sobre Nosotros</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
 
 
-  <div class="section1">
-    <div class="envoltorio">
-      <div class="section-mitad-izquierda">
+/* aca empieza el navbar */
+header{
+    background-color:#9A918F;
+    padding: 15px;
+}
 
-      </div>
-      <div class="section-mitad-derecha">
-        <div class="titulo">
-          <p>Metodo: Filtrado por Tela</p>
-        </div>
-        <div class="pasoapaso">
-          <ul>
-            <li>Usa un recipiente para mezclar el agua con el café.</li>
-            <li>Coloca una cucharada sopera y media de café en el recipiente.</li>
-            <li>Enciende el cronómetro y agrega los 250 mililitros del agua hervida.
-              Añade el agua rápidamente, asegurándote de mojar todas las partes del café.
-            </li>
-            <li>Unos segundos antes de llegar a los 4 minutos, calienta el filtro y la taza donde vayamos a tomar el café
-              con un poco de agua hirviendo.
-              Luego descarta el agua.
-            </li>
-            <li>Cuando se cumplan los 4 minutos colocamos el filtro de tela encima de la taza y vertimos la mezcla donde
-              esta el cafe.
-              Este, al tener una molienda media/gruesa, va a tardar unos pocos segundos en drenar.
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-    </div>
-    <div class="section-abajo">
-      
-      <ul>
-        <li>
-          El filtro de tela es el método de filtrado de café más antiguo del mundo, manteniendose relevante hoy en dia ya que representa la forma
-          más sencilla y económica de preparar café en casa, además son amigables con el medio ambiente y si se usa de forma correcta, 
-          produce un gran sabor y una textura increíble.
-        </li>
-        <li>
-          La limpieza va a ser la gran desventaja de los filtros de tela, para garantizar un buen sabor tiene que estar siempre limpio, 
-          y no con un color marrón procedente del café.
-        </li>        
-      </ul>
-      
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    margin: 10px;
+}
+.navbar-brand{
+    margin: 10px;
+    font-style: normal;
+    color: black;
+}
+
+/* aca termina el navbar */
 
 
-    </div>
-  </div>
-  <div class="section2">
-    <div class="envoltorio">
-      <div class="section-mitad-izquierda">
+/* aca empieza el body  */
 
-      </div>
-      <div class="section-mitad-derecha">
-        <div class="titulo">
-          <p>Metodo: Prensa Francesa</p>
-        </div>
-        <div class="pasoapaso">
-          <ul>
-            <li>Colocar el café molido en el vaso de la prensa y verter una breve cantidad de agua tibia. Dejar reposar 30 segundos.</li>
-            <li>Calentar agua en una pava, a una temperatura de 85°C a 90°C</li>
-            <li>Vertir el agua en la prensa con el cafe, y revolver brevemente para asegurarnos que el cafe este bien humedecido.</li>
-            <li>Colocar la tapa sin bajar el embolo y dejar reposar por 5 a 8 minutos. Cuidado: mientras mas tiempo de reposo pase, mas amargo 
-              saldra el cafe.
-            </li>
-            <li>Cuando se cumplan los minutos, presionamos el embolo suavemente, y ya esta listo para servir.
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-    </div>
-    <div class="section-abajo">
-      
-      <ul>
-        
-        La Prensa Francesa es uno de los métodos más populares en las casas, para mucha gente es el primer método que usan para preparar café. <br></br> 
-        
-        <h3>Ventajas:</h3>
-        
-        
-        <li>
-          Muy fácil de usar. No requiere una técnica compleja y es difícil equivocarse en la preparación.
-        </li>
-        <li>Al tener un tamaño considerable, este metodo nos permite elegir cuanto cafe queremos preparar, ideal para compartir.</li>
-        <li>Fácil de limpiar.	</li>
-        <br></br>    
-
-        <h3>Desventajas:</h3>
-        <li>Deja pasar sedimentos a la bebida, resultando algo turbia (aunque va en gustos)</li>
-        <li>Pueden quedar partículas de café atascadas en el filtro.</li>
-      </ul>
-      
+/* Arrancamos con el section, en total 3, cada uno contendra contenedores .section para la info*/
 
 
-    </div>
-  </div>
 
-  <div class="section3">
-    <div class="envoltorio">
-      <div class="section-mitad-izquierda">
+.section1{
+    display: flexbox;
+    background-color: #ACA5A4;
+    padding: 50px;
+    background-image: url(../img/cofee2.png);
+    background-size:contain;
+    
+}
+.section3{
+    display: flexbox;
+    background-color: #ACA5A4;
+    padding: 50px;
+    background-image: url(../img/cofee2.png);
+    background-size:37%;
+    
+}
 
-      </div>
-      <div class="section-mitad-derecha">
-        <div class="titulo">
-          <p>Metodo: Prensa Italiana</p>
-        </div>
-        <div class="pasoapaso">
-          <ul>
-            <li>Calenar agua en una pava. Cuando esté ligeramente templada (no debe hervir), 
-              viértela en el depósito de la cafetera hasta la altura de la pequeña válvula, semejante a un tornillo, 
-              que verás claramente en su interior..</li>
-            <li>Rellenar el filtro con cafe molido, hasta alcanzar el borde sin sobrepasarlo. 
-              Échalo sin apelmazar y retira el posible exceso pasando un cuchillo a ras de la superficie. 
-              Introduce el filtro en el depósito donde está el agua precalentada.</li>
-            <li>
-              Coloca la parte superior y enrosca para cerrar herméticamente la cafetera italiana.
-            </li>
-            <li>Ponla a fuego medio con la tapa abierta. En unos minutos, verás como el café empieza a emanar del tubo central de la cafetera, 
-              primero lentamente y tras unos segundos, a mayor velocidad. En ese momento escucharás el ruido característico del café saliendo y 
-              cuando lo escuches, es el momento de cerrar la tapa y retirar tu cafetera italiana del fuego.
-            </li>
-            <li>Espera unos segundos, para que el café termine de llegar a la parte superior y ¡listo!, ya tienes un potente café de cafetera italiana, 
-              con un aroma inconfundible y hecho en apenas 10 minutos.
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-    </div>
-    <div class="section-abajo">
-      
-      <ul>
-        <p>
-          La tipica cafetera italiana o moka se ha convertido en icono atemporal para todos los amantes del cafe. No pasa de moda ni necesita apenas actualizarse 
-          para permanecer relevante en todas las cocinas del mundo.
-          Su mecanismo es muy sencillo, pero logra capturar sabores y aromas inigualables que otros metodos no consiguen igualar. 
-        </p>
-        <br></br>
-        <h3>Ventajas</h3>
-        <li>
-          Alta velocidad de preparación.
-        </li>
-        <li>Facil de limpiar.</li>
-        <li>Sabores intensos.</li>
-        <li>Estetica.</li>        
-        <br></br>
-        <h3>Desventajas</h3>
-        <li>La cantidad de tazas esta limitado al tamaño de la prensa</li>
-        <li>Precio elevado.</li>
-      </ul>
+.section2{
+    display: flexbox;
+    background-color: #676362;
+    padding: 50px;
+    background-image: url(../img/cofee.png);
+    background-size: contain;
+}
 
-    </div>
-  </div>
-  <footer id="footer">
-    <div class="footer-medio">
-        <p>Sobre Nosotros</p>
-    </div>
-    <div class="footer-medio-abajo">
-        <div class="footer-medio-izquierda">
-            <button type="button" class="footer-boton">Sobre nosotros</button>
-        </div>
-        <div class="footer-medio-derecha">
-            <p>Conoce a las personas que hicieron</p>
-            <p>realidad esta pagina, sus gustos, intereses</p>
-            <p>y cafeterias preferidas</p>
-        </div>
-    </div>
-    <div class="footer-final">
-        <p>Todos los derechos reservados</p>
-    </div>
-  </footer>
-</body>
 
-</html>
+
+.envoltorio{
+    display:inline-flex;
+
+}
+
+
+.section-mitad-derecha{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    margin: 4px;
+}
+
+.titulo{
+    margin: 4px;
+    padding: 15px;
+    font-size: x-large;
+    display:flexbox;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    
+}
+.pasoapaso{
+    margin: 4px;
+    padding:5%;
+    font-size:larger;
+    display: flexbox;
+    text-align: left;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+
+}
+
+.section-mitad-izquierda{
+    margin: 4px;
+    display: flex;
+    flex-direction:column;
+    background-color: black;
+    width: 800px;
+    height: 350px;
+}
+
+.section-abajo{
+    margin:4px;
+    padding: 2%;
+    display: flex;
+    background-color: #d9d9d9;
+    text-align: justify;
+    font-size: large;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+/* aca empieza el footer */
+
+footer{
+    background-color: #d9d9d9;
+   
+}
+
+
+.footer-medio{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.footer-medio-abajo{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-boton{
+    margin: 10px;
+    padding: 30px;
+}
+
+.footer-final{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
