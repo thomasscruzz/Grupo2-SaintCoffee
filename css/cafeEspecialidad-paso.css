@@ -236,9 +236,41 @@ header{
   margin: 20px;
   padding: 10px;
   text-align: right;
-  width: 30%;
+  
 }
 .boton-bootstrap{
   margin: 20px;
   padding: 10px;
+}
+
+/* 
+aca empieza el footer */
+
+#footer{
+  margin: 20px;
+  padding: 20px;
+  background-color: grey;
+  text-align: center;
+}
+
+/* aca empieza el responsive para mobile  */
+
+
+@media(max-width: 700px){
+  #section{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    padding: 20px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
