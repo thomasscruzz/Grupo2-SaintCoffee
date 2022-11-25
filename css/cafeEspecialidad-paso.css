@@ -68,18 +68,18 @@ button{
      }
   
      label {                      /* dibuja la etiqueta ☰  con formato botón */
-                /* box-sizing: border-box; */
-        display: block;
-        border: 1px solid white;
-        border-radius: 5px;
-        width: 30px;
-        /* height: 30px; */
-        line-height: 40px;
-        font-weight: bold;
-        text-align: center;
-        user-select: none;
-        background-color: beige;
-        margin: 30px;
+       box-sizing: border-box;
+       display: block;
+       border: 1px solid white;
+       border-radius: 5px;
+       width: 30px;
+       height: 30px;
+       line-height: 30px;
+       font-weight: bold;
+       text-align: center;
+       user-select: none;
+       background-color: beige
+  
         }
       
   
@@ -195,8 +195,6 @@ header{
   }
 /* aca termino el navbar */
 
-/* aca empieza el section  */
-
 #section{
   display: flex;
   justify-content: space-between;
@@ -238,51 +236,9 @@ header{
   margin: 20px;
   padding: 10px;
   text-align: right;
-  
+  width: 30%;
 }
 .boton-bootstrap{
   margin: 20px;
   padding: 10px;
-}
-
-/* 
-aca empieza el footer */
-
-#footer{
-  margin: 20px;
-  padding: 20px;
-  background-color: grey;
-  text-align: center;
-}
-
-/* aca empieza el responsive para mobile  */
-
-
-@media(max-width: 700px){
-  #section{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    padding: 40px;
-  }
-  .card-group{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card{
-    padding: 20px;
-    width: 200px;
-  }
-  img{
-    width: 100%;
-    height: 100%;
-  }
-  #footer{
-    padding: 20px;
-    background-color: grey;
-    margin: 1px;
-    font-size: 17px;
-  }
-
 }

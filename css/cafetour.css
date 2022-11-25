@@ -1,0 +1,412 @@
+*{
+    padding: 0px;
+    margin: 0px;   
+}
+
+
+button{
+  border-radius: 10px;
+}
+
+
+input {                        /*no muestra el botón de menu */
+display: none;     
+}
+
+label {                       /*no muestra la etiqueta ☰ */
+    display:none;
+}
+
+
+.ul1{                           /*muestra los botones con la disposición horizontal para notebook */
+display: flex;
+justify-content: left;
+margin-top:0;
+padding: 0;
+}
+
+
+  
+
+.li1 {                     /*determina la propiedad de cada botón*/
+display: block;
+background: lightgrey;
+margin: 10px;
+padding: 10px;
+list-style: none;
+border-bottom: 1px solid grey;
+width: 200px;
+text-align: center;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+.li1:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
+filter: brightness(110%);
+}
+
+
+
+@media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
+header{
+    background-color:#9A918F;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+    display:block;
+}
+
+input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+    background: lightgrey; 
+}
+
+label:hover{                /*cambia el color de ☰ */
+background: grey;
+}
+
+.li1{                         /*elimina el margen  de cada botón */
+    margin: 0px;
+    text-align: right;
+}
+
+label {                      /* dibuja la etiqueta ☰  con formato botón */
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: beige
+
+}
+
+
+.ul1{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
+    display: none;
+    background-color:white;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative; 
+}
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    width: 100px;
+    padding: 20px; 
+    overflow: auto; 
+    color: #FFFFFF; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin: 25px;
+} 
+
+.dropdown-content a {
+    display: block; 
+    color:white; 
+    padding: 50px;
+    margin: 40px; 
+    text-decoration: none;   
+}
+.dropdown-content a:hover {
+    color: white;
+    background-color: white; 
+    margin: 10px;
+}
+.navbar-imagen{
+    width: 200px;
+    height: 80px;
+}
+
+}
+  /* termina responsive para mobile */
+
+.ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover{
+    color: red;
+}
+
+/* aca empieza el navbar */
+header{
+    background-color:rgba(254,219,179,255, 0.99);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.container-fluid{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+.navbar-imagen{
+    margin: 10px;
+   
+}
+.navbar-boton{
+    margin: 10px;
+    padding: 40px;
+    color: black;
+    border-radius: 10px;
+
+}
+.navbar-boton-letras{
+    color: black;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100px;
+    padding: 20px;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+    
+    display: block;
+    color: white;
+    background-color: azure;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+/* aca termina el navbar */
+
+body{
+    background-image: url(../img/coffeetravel.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.intro{
+    padding: 30px;
+    position: relative;
+    left: 25%;
+    background-color: rgba(228, 222, 222, 0.8);
+    width:790px;
+    color:black;
+    font-size: larger;
+}
+
+.descripcion{
+    padding: 30px;
+    position: relative;
+    left: 25%;
+    background-color: rgba(228, 222, 222, 0.8);
+    width:790px;
+    color:black;
+    font-size: larger;
+
+}
+
+.cafeterias{
+    padding: 30px;
+    position: relative;
+    left: 25%;
+    background-color: rgba(228, 222, 222, 0.8);
+    width:790px;
+    color:black;
+    font-size: larger;
+
+}
+
+.lugar{
+    padding:20%;
+    display: flex;
+    background-image: url(../img/lasvioletas.jpg);
+    background-size:contain;
+    size: 10px;
+}
+.data{
+    padding:20%;
+    display:flex;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    font-size: 20px;
+    background-image: url(../img/cafe-granos.jpg);
+
+    /* Para dejar la imagen de fondo centrada, vertical y
+    
+    horizontalmente */
+    
+    background-position: center center;
+    
+    /* Para que la imagen de fondo no se repita */
+    
+    background-repeat: no-repeat;
+    
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    
+    background-attachment: fixed;
+    
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    
+    background-size: cover;
+    
+    /* Se muestra un color de fondo mientras se está cargando la imagen
+    
+    de fondo o si hay problemas para cargarla */
+    
+   
+}
+/* aca empieza el footer */
+
+footer{
+    background-color: #d9d9d9;
+    
+}
+
+
+.footer-medio{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.footer-medio-abajo{
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+
+}
+
+
+.footer-boton{
+    margin: 10px;
+    padding: 30px;
+}
+
+.footer-final{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #FFFFFF;
+
+}
+
+@media (max-width: 700px) { 
+    footer{
+        background-color: #d9d9d9;
+       
+    }
+    
+    
+    .footer-medio{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin: 20px;
+    }
+    
+    .footer-medio-abajo{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .footer-boton{
+        margin: 10px;
+        padding: 30px;
+    }
+    
+    .footer-final{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .footer-medio-derecha{
+        margin: 20px;
+    }
+}

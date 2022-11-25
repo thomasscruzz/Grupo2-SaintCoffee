@@ -142,7 +142,7 @@ ul li a:hover{
 
 /* aca empieza el navbar */
 header{
-    background-color:#9A918F;
+    background-color:rgba(254,219,179,255, 0.99);
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -211,38 +211,181 @@ header{
 
 
 body{
-    background-image: url(../img/cafefondoamarillo.jpg);
-    background-size:100%;
+    background-image: url(../img/granosgranos.jpg);
+    background-size:150%;
+    background-repeat: no-repeat;
 }
 
 
 /*Todo dividido por sections, no hay mucha ciencia*/
 
 
-.sectionarriba{
+
+
+.sectionintro{     /*El primer cuadradito, donde informa sobre la pagina*/
+
+    display:flex;
+    flex-wrap: wrap ;
+    position: relative;
+    
+
     padding:20px;
     padding-left:25px;
-    display:flex;
-    margin-left: 15%;
-    text-align: left;
-    background-color: #676362;
-    margin-right:60% ;
+    
+    
     border-radius: 6px;
-    margin-top:3%;
-    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(245, 245, 245);
     font-size: large;
+    
+    
+    margin: 30px;
+   
 }
 
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+
+    margin-bottom: 30px;
+    background-color: rgba(41, 40, 40, 0.3);
+    width: 100%;
+
+
+
+}
+
+
 .local{
-    padding:20px;
-    padding-left:25px;
-    display:flex;
-    margin-left: 15%;
-    text-align: left;
-    background-color: #676362;
-    margin-right:60% ;
-    border-radius: 6px;
-    margin-top:3%;
+    display: flex;
+    position: relative;
+    width: 300px;
+    height:350px;
+    padding: 20px;
+
+
+
+
+    font-size: larger;
     color: whitesmoke;
-    font-size: large;
+    justify-content: center;
+
+    background-color: #2f2f2f;
+    border-radius: 20px;
+    
+    flex-wrap:wrap;
+    align-content: center;
+}
+
+.granos{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 100%;
+    justify-content: center;
+
+
+}
+
+#footer{
+    font-size: 20px;
+    background-image: url(../img/cafe-granos.jpg);
+
+    /* Para dejar la imagen de fondo centrada, vertical y
+    
+    horizontalmente */
+    
+    background-position: center center;
+    
+    /* Para que la imagen de fondo no se repita */
+    
+    background-repeat: no-repeat;
+    
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    
+    background-attachment: fixed;
+    
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    
+    background-size: cover;
+    
+    /* Se muestra un color de fondo mientras se está cargando la imagen
+    
+    de fondo o si hay problemas para cargarla */
+    
+   
+}
+/* aca empieza el footer */
+
+footer{
+    background-color: #d9d9d9;
+}
+
+
+.footer-medio{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.footer-medio-abajo{
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+
+}
+
+
+.footer-boton{
+    margin: 10px;
+    padding: 30px;
+}
+
+.footer-final{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #FFFFFF;
+
+}
+
+@media (max-width: 700px) { 
+    footer{
+        background-color: #d9d9d9;
+       
+    }
+    
+    
+    .footer-medio{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin: 20px;
+    }
+    
+    .footer-medio-abajo{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .footer-boton{
+        margin: 10px;
+        padding: 30px;
+    }
+    
+    .footer-final{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .footer-medio-derecha{
+        margin: 20px;
+    }
 }

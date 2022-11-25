@@ -142,7 +142,7 @@ ul li a:hover{
 
 /* aca empieza el navbar */
 header{
-    background-color:#9A918F;
+   
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -210,6 +210,14 @@ header{
 /* aca empieza el body  */
 
 /* Arrancamos con el section, en total 3, cada uno contendra contenedores .section para la info*/
+
+body{
+    background-image: url(../img/cofee2.png);
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-color: #ACA5A4;
+}
+
 
 
 
@@ -300,8 +308,10 @@ header{
 /* aca empieza el footer */
 
 footer{
-    background-color: #d9d9d9;
-   
+    background-color: #676362;
+    
+    background-image: url(../img/cofee.png);
+
 }
 
 
