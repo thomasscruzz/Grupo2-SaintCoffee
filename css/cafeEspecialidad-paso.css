@@ -135,8 +135,9 @@ button{
 
 /* aca empieza el navbar */
 header{
-    background-color:#9A918F;
+    background-color: rgb(187, 184, 181, 0.3);
     padding: 15px;
+    height: 150px;
     display: flex;
     justify-content: space-around;
 }
@@ -200,6 +201,8 @@ header{
   justify-content: space-between;
   margin: 2px;
   padding: 5px;
+  color: rgb(255, 255, 255);
+  font-size: larger;
 }
 .section-izquierda{
     margin: 50px;
@@ -216,6 +219,14 @@ header{
     border-radius: 30px;
     width: 30%;
     height: 100px;
+}
+
+
+body{
+  background-image: url(../img/cafesdibujo.png);
+  background-size: contain;
+  background-color: rgb(250, 233, 212);
+
 }
 
 .card-group{
