@@ -21,7 +21,7 @@ label {                       /*no muestra la etiqueta ☰ */
 .ul1{                           /*muestra los botones con la disposición horizontal para notebook */
 display: flex;
 justify-content: left;
-margin-top:0;
+margin-left:10px;
 padding: 0;
 }
 
@@ -35,7 +35,7 @@ margin: 10px;
 padding: 10px;
 list-style: none;
 border-bottom: 1px solid grey;
-width: 200px;
+width: 150px;
 text-align: center;
 }
 
@@ -55,7 +55,7 @@ header{
   flex-direction: row-reverse;
 }
 
-input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
   display:block;
 }
 
@@ -83,8 +83,8 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
   font-weight: bold;
   text-align: center;
   user-select: none;
-  background-color: beige
-
+  background-color: beige;
+  
 }
 
 
@@ -131,18 +131,18 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 }
 /* termina responsive para mobile */
 
-.ul li a{
+.ul1 .li1 a{
   text-decoration: none;
   color: black;
 }
 
-ul li a:hover{
+.ul1 .li1 a:hover{
   color: red;
 }
 
 /* aca empieza el navbar */
 header{
-  background-color:rgba(254,219,179,255, 0.99);
+ 
   padding: 15px;
   display: flex;
   justify-content: space-around;
