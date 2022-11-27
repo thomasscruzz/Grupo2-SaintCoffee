@@ -56,14 +56,13 @@ filter: brightness(110%);
         flex-direction: row-reverse;
     }
 
-    input:checked ~ .ul {   /*muestra todas el contenido de todas las etiquetas ul */
-        display:block;
-    }
-   
+input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+    display:block;
+}
 
-    input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
-        background: lightgrey; 
-    }
+input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+    background: lightgrey; 
+}
 
     label:hover{                /*cambia el color de ☰ */
     background: grey;
@@ -133,18 +132,18 @@ filter: brightness(110%);
 }
   /* termina responsive para mobile */
 
-.ul li a{
+.ul1 .li1 a{
     text-decoration: none;
     color: black;
 }
 
-ul li a:hover{
+.ul1 .li1 a:hover{
     color: red;
 }
 
 /* aca empieza el navbar */
 header{
-    background-color:#9A918F;
+    background-color:rgba(254,219,179,255, 0.99);
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -207,6 +206,7 @@ header{
     background-color: #00A4BD;
 }
 /* aca termina el navbar */
+
 
 body{
     background-image: url(../img/coffeetravel.jpg);
