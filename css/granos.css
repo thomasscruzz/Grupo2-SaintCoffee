@@ -246,6 +246,7 @@ body{
 }
 
 .section{
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -455,11 +456,11 @@ footer{
     .local{
         display: flex;
         position: relative;
-        width: 110px;
-        height:110px;
+        width: auto;
+        height:auto;
         padding: 20px;
     
-    
+        margin-left: 30px;
     
     
         font-size: larger;
@@ -471,12 +472,14 @@ footer{
         
         flex-wrap:wrap;
         align-content: center;
+
+
     }
     
     .granos{
         display: flex;
-        width: 100px;
-        height: 100px;
+        width: 30px;
+        height: 30px;
         background-color: rgb(255, 255, 255, 0.4);
         border-radius: 100%;
         justify-content: center;
