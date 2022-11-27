@@ -84,7 +84,8 @@ input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas lab
         font-weight: bold;
         text-align: center;
         user-select: none;
-        background-color: beige
+        background-color: beige;
+        margin-left:70px;
 
     }
 
