@@ -1,4 +1,3 @@
-
 *{
     padding: 0px;
     margin: 0px;   
@@ -56,7 +55,7 @@ header{
     flex-direction: row-reverse;
 }
 
-input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
     display:block;
 }
 
@@ -132,18 +131,18 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 }
   /* termina responsive para mobile */
 
-.ul li a{
+.ul1 .li1 a{
     text-decoration: none;
     color: black;
 }
 
-ul li a:hover{
+.ul1 .li1 a:hover{
     color: red;
 }
 
 /* aca empieza el navbar */
 header{
-    background-color:#9A918F;
+   
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -206,6 +205,7 @@ header{
     background-color: #00A4BD;
 }
 /* aca termina el navbar */
+
 /* aca empieza el body  */
 
 /* arrcanamos con el section, mirada principal de la pagina */
