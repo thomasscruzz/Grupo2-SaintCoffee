@@ -1,3 +1,4 @@
+
 *{
     padding: 0px;
     margin: 0px;   
@@ -18,7 +19,7 @@ label {                       /*no muestra la etiqueta ☰ */
 }
 
 
-.ul1{                           /*muestra los botones con la disposición horizontal para notebook */
+.ul{                           /*muestra los botones con la disposición horizontal para notebook */
 display: flex;
 justify-content: left;
 margin-top:0;
@@ -28,7 +29,7 @@ padding: 0;
 
   
 
-.li1 {                     /*determina la propiedad de cada botón*/
+.li {                     /*determina la propiedad de cada botón*/
 display: block;
 background: lightgrey;
 margin: 10px;
@@ -40,93 +41,94 @@ text-align: center;
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
-.li1:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
+.li:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
 filter: brightness(110%);
 }
 
 
 
 @media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
-header{
-    background-color:#9A918F;
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-}
+    header{
+        background-color:#9A918F;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
 
-input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
-    display:block;
-}
+    input:checked ~ .ul {   /*muestra todas el contenido de todas las etiquetas ul */
+        display:block;
+    }
+   
 
-input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
-    background: lightgrey; 
-}
+    input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+        background: lightgrey; 
+    }
 
-label:hover{                /*cambia el color de ☰ */
-background: grey;
-}
+    label:hover{                /*cambia el color de ☰ */
+    background: grey;
+    }
 
-.li1{                         /*elimina el margen  de cada botón */
-    margin: 0px;
-    text-align: right;
-}
+    .li{                         /*elimina el margen  de cada botón */
+        margin: 0px;
+        text-align: right;
+    }
 
-label {                      /* dibuja la etiqueta ☰  con formato botón */
-    box-sizing: border-box;
-    display: block;
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
-    background-color: beige
+    label{                      /* dibuja la etiqueta ☰  con formato botón */
+        box-sizing: border-box;
+        display: block;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: beige
 
-}
+    }
 
 
-.ul1{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
-    display: none;
-    background-color:white;
-}
+    .ul{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
+        display: none;
+        background-color:white;
+    }
 
-.dropdown {
-    display: inline-block;
-    position: relative; 
-}
-.dropdown-content {
-    display: none; 
-    position: absolute; 
-    width: 100px;
-    padding: 20px; 
-    overflow: auto; 
-    color: #FFFFFF; 
-}
+    .dropdown {
+        display: inline-block;
+        position: relative; 
+    }
+    .dropdown-content {
+        display: none; 
+        position: absolute; 
+        width: 100px;
+        padding: 20px; 
+        overflow: auto; 
+        color: #FFFFFF; 
+    }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-    margin: 25px;
-} 
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin: 25px;
+    } 
 
-.dropdown-content a {
-    display: block; 
-    color:white; 
-    padding: 50px;
-    margin: 40px; 
-    text-decoration: none;   
-}
-.dropdown-content a:hover {
-    color: white;
-    background-color: white; 
-    margin: 10px;
-}
-.navbar-imagen{
-    width: 200px;
-    height: 80px;
-}
+    .dropdown-content a {
+        display: block; 
+        color:white; 
+        padding: 50px;
+        margin: 40px; 
+        text-decoration: none;   
+    }
+    .dropdown-content a:hover {
+        color: white;
+        background-color: white; 
+        margin: 10px;
+    }
+    .navbar-imagen{
+        width: 200px;
+        height: 80px;
+    }
 
 }
   /* termina responsive para mobile */
@@ -142,7 +144,7 @@ ul li a:hover{
 
 /* aca empieza el navbar */
 header{
-    background-color:rgba(254,219,179,255, 0.99);
+    background-color:#9A918F;
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -209,7 +211,7 @@ header{
 body{
     background-image: url(../img/coffeetravel.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 
@@ -234,7 +236,37 @@ body{
 
 }
 
-/* .cafeterias{
+.lasVioletas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lasVioletas-derecha-descripcion{
+    padding: 3px;
+    margin: 20px;
+}
+
+.cafe-tortoni{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cafeTortoni-derecha-descripcion{
+    padding: 3px;
+    margin: 20px;
+}
+
+.cafe-london{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cafeLondon-derecha-descripcion{
+    padding: 3px;
+    margin: 20px;
+}
+
+#section{
     padding: 30px;
     position: relative;
     left: 25%;
@@ -242,23 +274,7 @@ body{
     width:790px;
     color:black;
     font-size: larger;
-
-} */
-
-/* .lugar{
-    padding:20%;
-    display: flex;
-    background-image: url(../img/lasvioletas.jpg);
-    background-size:contain;
-    size: 10px;
-} */
-/* .data{
-    padding:20%;
-    display:flex;
-
-
-
-} */
+}
 
 
 /* aca empeiza el footer  */
@@ -361,53 +377,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #footer{
     font-size: 20px;
     background-image: url(../img/cafe-granos.jpg);
@@ -505,5 +474,21 @@ footer{
     }
     .footer-medio-derecha{
         margin: 20px;
+    }
+}
+
+
+/* aca empeiza el formato responsive para mobile */
+
+@media (max-width: 700px){
+    .intro h2 h3{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .descripcion h2 li ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
     }
 }
