@@ -55,7 +55,7 @@ header{
     flex-direction: row-reverse;
 }
 
-input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
     display:block;
 }
 
@@ -131,12 +131,12 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 }
   /* termina responsive para mobile */
 
-.ul li a{
+.ul1 .li1 a{
     text-decoration: none;
     color: black;
 }
 
-ul li a:hover{
+.ul1 .li1 a:hover{
     color: red;
 }
 
@@ -285,7 +285,7 @@ body{
     margin: 4px;
     display: flex;
     flex-direction:column;
-    background-color: black;
+    
     width: 800px;
     height: 350px;
 }
