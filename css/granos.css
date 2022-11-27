@@ -256,6 +256,8 @@ body{
     background-color: rgba(41, 40, 40, 0.3);
     width: 100%;
 
+    overflow-x:auto;
+    
 
 
 }
@@ -390,4 +392,103 @@ footer{
     .footer-medio-derecha{
         margin: 20px;
     }
+}
+
+
+@media all and (max-width: 700px){
+    body{
+        background-image: url(../img/granosgranos.jpg);
+        background-size:200%;
+        background-repeat: repeat;
+
+    }
+    
+    
+    /*Todo dividido por sections, no hay mucha ciencia*/
+    
+    
+    
+    
+    .sectionintro{     /*El primer cuadradito, donde informa sobre la pagina*/
+    
+        display:flex;
+        flex-wrap: wrap ;
+        position: relative;
+        
+    
+        padding:20px;
+        padding-left:25px;
+        
+        
+        border-radius: 6px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: rgb(245, 245, 245);
+        font-size: small;
+        
+        
+        
+        margin: 30px;
+       
+    }
+    
+    .section{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        width: auto;
+        
+    
+        margin-bottom: 30px;
+        background-color: rgba(41, 40, 40, 0.3);
+        width: 100%;
+    
+        overflow-x:auto;
+
+        
+        
+    
+    
+    }
+    
+    
+    .local{
+        display: flex;
+        position: relative;
+        width: 110px;
+        height:110px;
+        padding: 20px;
+    
+    
+    
+    
+        font-size: larger;
+        color: whitesmoke;
+        justify-content: center;
+    
+        background-color: #2f2f2f;
+        border-radius: 20px;
+        
+        flex-wrap:wrap;
+        align-content: center;
+    }
+    
+    .granos{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 255, 255, 0.4);
+        border-radius: 100%;
+        justify-content: center;
+    
+    
+    }
+
+
+
+
+
+
+
+
 }
