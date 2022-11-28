@@ -1,6 +1,7 @@
 *{
   padding: 0px;
-  margin: 0px;   
+  margin: 0px;
+  font-family: Verdana, sans-serif;  
 }
 
 
@@ -310,6 +311,7 @@ footer{
   text-align: center;
   margin: 20px;
   padding: 90px;
+  color: white
 }
 
 .containerFotos{
@@ -410,13 +412,12 @@ footer{
   .container{
     background-color: #9A918F;
     height: 200px;
-    text-align: center;
     margin: 70px;
     width: 260px;
   }
   
   .TextoSobreNosotros {
-    text-align: center;
+    
     margin: 20px;
     padding: 70px;
   }
