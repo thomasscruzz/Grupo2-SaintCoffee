@@ -144,11 +144,12 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 
 /* aca empieza el navbar */
 header{
-    
+    background-image: url(../img/cafefondoamarillo.jpg);
     padding: 15px;
     display: flex;
     justify-content: space-around;
     height: 150px;
+    background-size: 100%;
 }
 
 .navbar{
@@ -256,7 +257,7 @@ header{
     margin: 5px;
     padding: 30px;
     color: #FFFFFF;
-
+    font-size: 21px;
 }
 
 
@@ -268,6 +269,7 @@ header{
     color: white;
     border: 1px solid;
     padding: 20px;
+    font-size: 20px;
 }
 
 /* aca termina el section de la pagina */
