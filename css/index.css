@@ -41,14 +41,14 @@ label {                       /*no muestra la etiqueta ☰ */
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
 .li1:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
-filter: brightness(110%);
+    filter: brightness(110%);
 }
 
 
 
-@media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
+@media  (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
 header{
-    
+    background-image: url(../img/cafefondoamarillo2.jpg);
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -545,4 +545,251 @@ footer{
         margin: 20px;
     }
 }
+
+
+
+@media all and (max-width: 700px){
+    header{
+        background-image: url(../img/cafefondoamarillo2.jpg);
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        height: 220px;
+        background-size: cover;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .container-fluid{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    .navbar-imagen{
+        margin: 10px;
+       
+    }
+    .navbar-boton{
+        margin: 10px;
+        padding: 40px;
+        color: black;
+        border-radius: 10px;
+    
+    }
+    .navbar-boton-letras{
+        color: black;
+    }
+    .dropdown {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 100px;
+        padding: 20px;
+        overflow: auto;
+        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    }
+    .dropdown:hover .dropdown-content {
+        
+        display: block;
+        color: white;
+        background-color: azure;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        color: #000000;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    .dropdown-content a:hover {
+        color: #FFFFFF;
+        background-color: #00A4BD;
+    }
+    
+    
+    
+    /* aca empieza el body  */
+    
+    /* arrcanamos con el section, mirada principal de la pagina */
+    
+    #section{
+        position: relative;
+        display: flex;
+        width: auto;
+        height: auto;
+
+
+        padding: 50px;
+        background-image: none;
+    
+        background-color: #121111;
+        background-position: center center;
+    
+        /* Para que la imagen de fondo no se repita */
+    
+        background-repeat: no-repeat;
+    
+        /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    
+        background-attachment: fixed;
+    
+        /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    
+        background-size: contain;
+
+        flex-wrap: wrap;
+
+    }
+    
+    .section-arriba{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 30px;
+        font-size: small;
+        color: #FFFFFF;
+        width: auto;
+        height: auto;
+        
+    }
+    
+    .section-medio-izquierda{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin: 5px;
+        padding: 30px;
+        color: #FFFFFF;
+        font-size: medium;
+        
+    
+    }
+    .section-medio-izquierda-abajo{
+        display: flex;
+        justify-content: space-around;
+        margin: 5px;
+        padding: 30px;
+        color: #FFFFFF;
+    
+    }
+    
+    
+    .section-boton{
+        background-color: #676362;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: #676362; */
+        color: white;
+        border: 1px solid;
+        padding: 20px;
+    }
+    
+    /* aca termina el section de la pagina */
+    
+    /* aca empieza el article */
+    
+    #article{
+        font-size: 20px;
+        background-image: url(../img/cafe-italiano.jpg);
+    
+        /* Para dejar la imagen de fondo centrada, vertical y
+        
+        horizontalmente */
+        
+        background-position: center center;
+        
+        /* Para que la imagen de fondo no se repita */
+        
+        background-repeat: no-repeat;
+        
+        /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+        
+        background-attachment: fixed;
+        
+        /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+        
+        background-size: cover;
+        
+        /* Se muestra un color de fondo mientras se está cargando la imagen
+        
+        de fondo o si hay problemas para cargarla */
+    
+        height: 400px;
+        
+    
+        
+    }
+    
+    .article-medio{
+        color: whitesmoke;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 40px;
+        font-size: 40px;
+        width: fit-content;
+        position: relative;
+        left: 15%;
+    
+    
+    }
+    .botonesarticulo{
+        display: flex;
+        position: relative;
+        left: 44.8%;
+        margin-top: 10px;
+    
+    
+    
+    }
+    
+    .article-abajo{
+        display: flex;
+        justify-content: space-evenly;
+        color: black;
+        padding-right: 60px;
+        
+    }
+    .article-abajo-izquierda{
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color:rgba(255, 255, 255, 0.5);
+        width: fit-content;
+        margin-left: 30px;
+        border-radius: 5px;
+    }
+    .article-abajo-derecha{
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color:rgba(255, 255, 255, 0.7);
+        border-radius: 5px;
+        
+    }
+      
+    .article-abajo-boton{
+          display: flex;
+          justify-content: center;
+          color: #d9d9d9;
+          margin: 10px;
+          padding: 10px;
+         
+    }
+    .article-boton{
+          margin: 10px;
+          padding: 30px;
+    } 
+      
+      
+          
+}
+
+
 
