@@ -219,6 +219,7 @@ footer{
   color: #FFFFFF;
 }
 
+
 .footer-medio-abajo{
   display: flex;
   justify-content: space-around;
@@ -409,6 +410,32 @@ footer{
 
 
 @media(max-width:700px){
+
+  
+  .footer-medio-izquierda{
+    height: fit-content;
+  }
+
+
+  .footer-medio-abajo{
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+    height: fit-content;
+    flex-wrap: wrap;
+    
+  }
+
+  .footer-medio{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #FFFFFF;
+    background-color: #9A918F;
+  }
+
+
+
   .container{
     background-color: #9A918F;
     height: 200px;
