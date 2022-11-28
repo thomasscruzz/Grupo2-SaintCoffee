@@ -539,7 +539,7 @@ footer{
     
     
     .intro{
-        position: relative;
+        position:static;
         background-color: rgba(228, 222, 222, 0.8);
         color:black;
         font-size: medium;
