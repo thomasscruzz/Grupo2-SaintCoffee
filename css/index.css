@@ -277,34 +277,7 @@ header{
 
 /* aca empieza el article */
 
-#article,#footer{
-    font-size: 20px;
-    background-image: url(../img/cafe-granos.jpg);
 
-    /* Para dejar la imagen de fondo centrada, vertical y
-    
-    horizontalmente */
-    
-    background-position: center center;
-    
-    /* Para que la imagen de fondo no se repita */
-    
-    background-repeat: no-repeat;
-    
-    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
-    
-    background-attachment: fixed;
-    
-    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-    
-    background-size: cover;
-    
-    /* Se muestra un color de fondo mientras se está cargando la imagen
-    
-    de fondo o si hay problemas para cargarla */
-    
-   
-}
 
 /* aca empieza el body  */
 
@@ -326,7 +299,7 @@ header{
 
     /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
 
-    background-size: cover;
+    background-size: 100%;
 }
 
 .section-arriba{
@@ -344,6 +317,7 @@ header{
     margin: 5px;
     padding: 30px;
     color: #FFFFFF;
+    font-size: larger;
 
 }
 .section-medio-izquierda-abajo{
@@ -370,7 +344,109 @@ header{
 
 /* aca empieza el article */
 
-#article,#footer{
+#article{
+    font-size: 20px;
+    background-image: url(../img/cafe-italiano.jpg);
+
+    /* Para dejar la imagen de fondo centrada, vertical y
+    
+    horizontalmente */
+    
+    background-position: center center;
+    
+    /* Para que la imagen de fondo no se repita */
+    
+    background-repeat: no-repeat;
+    
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    
+    background-attachment: fixed;
+    
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    
+    background-size: cover;
+    
+    /* Se muestra un color de fondo mientras se está cargando la imagen
+    
+    de fondo o si hay problemas para cargarla */
+
+    height: 400px;
+    
+
+   
+}
+
+.article-medio{
+    color: whitesmoke;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+    font-size: 40px;
+    width: fit-content;
+    position: relative;
+    left: 15%;
+
+
+}
+.botonesarticulo{
+ display: flex;
+ position: relative;
+ left: 44.8%;
+ margin-top: 10px;
+
+
+
+}
+
+.article-abajo{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    padding-right: 60px;
+    
+}
+.article-abajo-izquierda{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.article-abajo-derecha{
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    
+}
+
+.article-abajo-boton{
+    display: flex;
+    justify-content: center;
+    color: #d9d9d9;
+    margin: 10px;
+    padding: 10px;
+   
+}
+.article-boton{
+    margin: 10px;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* aca termino el article */
+
+/* aca empieza el footer */
+#footer{
     font-size: 20px;
     background-image: url(../img/cafe-granos.jpg);
 
@@ -396,58 +472,13 @@ header{
     
     de fondo o si hay problemas para cargarla */
     
-   
-}
-
-.article-medio{
-    color: black;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-   padding: 40px;
-   font-size: 40px;
-}
-
-.article-abajo{
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    padding-right: 60px;
-}
-.article-abajo-izquierda{
-    padding-left: 60px;
-    padding-right: 20px;
-    background-color:rgba(255, 255, 255, 0.5);
-}
-.article-abajo-derecha{
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color:rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
     
 }
 
-.article-abajo-boton{
-    display: flex;
-    justify-content: center;
-    color: #d9d9d9;
-    margin: 10px;
-    padding: 10px;
-   
-}
-.article-boton{
-    margin: 10px;
-    padding: 30px;
-}
-
-
-
-/* aca termino el article */
-
-/* aca empieza el footer */
 
 footer{
     background-color: #d9d9d9;
+    
 }
 
 
