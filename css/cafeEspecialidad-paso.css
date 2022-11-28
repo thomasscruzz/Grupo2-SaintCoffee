@@ -84,7 +84,8 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
   text-align: center;
   user-select: none;
   background-color: beige;
-  
+  margin-left:70px;
+
 }
 
 
@@ -206,6 +207,7 @@ header{
 }
 /* aca termina el navbar */
 
+/* section dekstop */
 
 #section{
   display: flex;
@@ -223,15 +225,31 @@ header{
     width: 30%;
     height: 100px;
 }
-.section-derecha{
-    margin: 50px;
-    padding: 50px;
-    background-color: grey;
-    border-radius: 30px;
-    width: 30%;
-    height: 100px;
-}
 
+
+/* fin section dekstop
+
+empieza section mobile */
+
+@media (max-width: 700px) {
+  #section{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 100px; */
+    /* padding: 50px; */
+    color: rgb(255, 255, 255);
+    /* font-size: medium; */
+  }
+   .section-izquierda{
+      margin: 10px;
+      padding: 50px;
+      background-color: grey;
+      border-radius: 30px;
+      width: 100%;
+     font-size: 20px;
+  } 
+}
+/* fin section mobile */
 
 body{
   background-image: url(../img/cafesdibujo.png);
@@ -242,6 +260,8 @@ body{
 
 .card-group{
   display: flex;
+ 
+  justify-content: center;
 }
 
 .card{
@@ -269,6 +289,39 @@ body{
   
 }
 
+/* empieza el card grup mobile */
+
+@media (max-width: 700px){
+  .card-group{
+    display: flex;
+    width: 110%;
+    justify-content: center;
+  }
+  .card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 20px;
+    width: 37%;
+    border: 5px solid;
+    background-color: white;
+    font-size: 18px;
+  }
+  .card-body{
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    width: 60%;
+    background-color: white;
+  }
+  .boton-bootstrap{
+    margin-left: 10px;
+  }
+  .card-img-top-town{
+    width: 50%;
+  }
+}
 
 
 footer{
@@ -339,23 +392,6 @@ footer{
       margin: 20px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
