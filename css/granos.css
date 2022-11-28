@@ -246,17 +246,19 @@ body{
 }
 
 .section{
+    
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    overflow-y: hidden;
     
 
     margin-bottom: 30px;
     background-color: rgba(41, 40, 40, 0.3);
     width: 100%;
 
-    overflow-x:auto;
+    
     
 
 
@@ -327,6 +329,7 @@ body{
 
 footer{
     background-color: #d9d9d9;
+   
 }
 
 
@@ -423,10 +426,11 @@ footer{
         border-radius: 6px;
         background-color: rgba(0, 0, 0, 0.3);
         color: rgb(245, 245, 245);
-        font-size: small;
+        font-size: medium;
         
+        top: 30px;
         
-        
+    
         margin: 30px;
        
     }
@@ -436,15 +440,18 @@ footer{
         align-items: center;
         justify-content: space-around;
         height: auto;
-        width: auto;
+        width:auto;
         
     
         margin-bottom: 30px;
         background-color: rgba(41, 40, 40, 0.3);
-        width: 100%;
-    
-        overflow-x:auto;
+        
+        overflow-x: auto;
+        
 
+        
+        
+        
         
         
     
@@ -454,13 +461,13 @@ footer{
     
     .local{
         display: flex;
-        position: relative;
-        width: 110px;
-        height:110px;
+        
+        width: 300px;
+        height:auto;
         padding: 20px;
-    
-    
-    
+        
+        
+       
     
         font-size: larger;
         color: whitesmoke;
@@ -471,24 +478,32 @@ footer{
         
         flex-wrap:wrap;
         align-content: center;
+        left:350px;
+
+        margin-right: 100px;
+
     }
     
     .granos{
         display: flex;
-        width: 100px;
-        height: 100px;
+        position: relative;
+        
+        width: 200px;
+        height: 200px;
         background-color: rgb(255, 255, 255, 0.4);
         border-radius: 100%;
         justify-content: center;
+        
+
+        left: 300px;
+
+        
     
     
     }
 
 
-
-
-
-
+    
 
 
 }

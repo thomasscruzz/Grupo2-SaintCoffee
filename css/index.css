@@ -29,14 +29,14 @@ label {                       /*no muestra la etiqueta ☰ */
   
 
 .li1 {                     /*determina la propiedad de cada botón*/
-display: block;
-background: lightgrey;
-margin: 10px;
-padding: 10px;
-list-style: none;
-border-bottom: 1px solid grey;
-width: 150px;
-text-align: center;
+    display: block;
+    background: lightgrey;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    width: 150px;
+    text-align: center;
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
@@ -48,11 +48,12 @@ filter: brightness(110%);
 
 @media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
 header{
-    background-color:#9A918F;
+    
     padding: 15px;
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
+
 }
 
 input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
@@ -143,7 +144,7 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 
 /* aca empieza el navbar */
 header{
-   
+    
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -210,6 +211,8 @@ header{
 /* aca empieza el body  */
 
 /* arrcanamos con el section, mirada principal de la pagina */
+
+
 
 #section{
   padding: 50px;
@@ -310,17 +313,17 @@ header{
   background-image: url(../img/cafe-italiano.jpg);
   background-position: center center;
 
-/* Para que la imagen de fondo no se repita */
+    /* Para que la imagen de fondo no se repita */
 
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
 
-/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
 
-background-attachment: fixed;
+    background-attachment: fixed;
 
-/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
 
-background-size: cover;
+    background-size: cover;
 }
 
 .section-arriba{
