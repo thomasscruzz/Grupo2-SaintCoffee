@@ -149,7 +149,7 @@ header{
     display: flex;
     justify-content: space-around;
     height: 150px;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .navbar{
