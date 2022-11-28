@@ -319,6 +319,24 @@ body{
     
    
 }
+
+.formulario{
+    display: flex;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    left: 50%;
+
+}
+
+
+
+
+
+
+
+
 footer{
     background-color: #d9d9d9;
 }
