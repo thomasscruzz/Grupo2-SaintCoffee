@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid"> 
+              <img src="./img/Logosaintcoffepng.png" class="navbar-imagen" alt="logo" width="200%" height="200px">
+             </div>
+        </nav>
+        <div class="navbar">
+          <nav>
+            <input type="checkbox" id="menu">  
+            <label for="menu"> ☰ </label>
+            <div class="ul1">
+              <div class="li1"><a href="#">Inicio</a></div>
+                <div class="li1"> 
+                  <div class="dropdown" aria-label="Default select example">
+                    <a href="#">Locales</a>
+                    <div class="dropdown-content" aria-label="Default select example">
+                      
+                      <a href="cafeEspecialidad-paso.html">Cafe especialidad</a>
+                    </div>
+                </div> 
+
+                </div>
+                <div class="li1">
+                  <div class="dropdown">
+                    <a href="#">El arte del cafe</a>
+                    <div class="dropdown-content">
+                      <a href="metodosfiltrado.html">Metodos del filtrado</a>
+                      <a href="granos.html">Granos</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="li1"> 
+                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                </div>
+                <div class="li1"> 
+                    <a href="cafetour.html">Cafe tour</a>
+                </div>
+            </div>
+
+          </nav>
+        </div>
+    </header>
+   <article>
+    <form id="Formulario">
+            
+        <label  for="name">Nombre:</label>
+        <input id="name" class="input"  type="text"  size="30" required/>
+        <br>
+      
+        <label  for="name">Apellido:</label>
+        <input id="apellido" class="input"  type="text"  size="30" required/>
+        <br>
+      
+        <label  for="email">Email:</label>
+        <input id="email" class="input" name="email" type="email" placeholder="nombre@gmail.com"  size="30"required/>
+        <br>
+      <label for="phone">Telefono:</label>
+      <input type="tel" id="phone" name="phone" placeholder="11-1234-4321" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"><br><br>
+      <br>
+      <label for="calendario">Ingrese una fecha:</label>
+      <input type="date" name="calendario" id="calendario">
+        <label  for="message">Comentario:</label>
+        <textarea id="message" class="input" name="message" rows="7" cols="30" ></textarea>
+        
+        <input  type="submit" value="enviar" />
+    </form>
+   </article>
+   <footer id="footer">
+    <div class="footer-medio">
+        <p>Sobre Nosotros</p>
+    </div>
+    <div class="footer-medio-abajo">
+        <div class="footer-medio-izquierda">
+            <a href="sobrenosotros.html"><button type="button" class="footer-boton">Sobre nosotros</button></a>
+        </div>
+        <div class="footer-medio-derecha">
+            <p>Conoce a las personas que hicieron</p>
+            <p>realidad esta pagina, sus gustos, intereses</p>
+            <p>y cafeterias preferidas</p>
+        </div>
+    </div>
+    <div class="footer-final">
+        <p>Todos los derechos reservados</p>
+    </div>
+</footer>
+</body>
+</html>
