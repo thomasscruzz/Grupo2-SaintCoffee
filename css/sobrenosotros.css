@@ -1,0 +1,524 @@
+*{
+  padding: 0px;
+  margin: 0px;   
+}
+
+
+button{
+border-radius: 10px;
+}
+
+
+input {                        /*no muestra el botón de menu */
+display: none;     
+}
+
+label {                       /*no muestra la etiqueta ☰ */
+  display:none;
+}
+
+
+.ul1{                           /*muestra los botones con la disposición horizontal para notebook */
+display: flex;
+justify-content: left;
+margin-top:0;
+padding: 0;
+}
+
+
+
+
+.li1 {                    
+display: block;
+background: lightgrey;
+margin: 10px;
+padding: 10px;
+list-style: none;
+border-bottom: 1px solid grey;
+width: 200px;
+text-align: center;
+}
+
+
+.li1:hover {                      
+filter: brightness(110%);
+}
+
+
+
+@media all and (max-width: 700px) {  
+header{
+  background-color:#9A918F;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+  display:block;
+}
+
+input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+  background: lightgrey; 
+}
+
+label:hover{                /*cambia el color de ☰ */
+background: grey;
+}
+
+.li1{                         /*elimina el margen  de cada botón */
+  margin: 0px;
+  text-align: right;
+}
+
+label {                      /* dibuja la etiqueta ☰  con formato botón */
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  background-color: beige
+
+}
+
+
+.ul1{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
+  display: none;
+  background-color:white;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative; 
+}
+.dropdown-content {
+  display: none; 
+  position: absolute; 
+  width: 100px;
+  padding: 20px; 
+  overflow: auto; 
+  color: #FFFFFF; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin: 25px;
+} 
+
+.dropdown-content a {
+  display: block; 
+  color:white; 
+  padding: 50px;
+  margin: 40px; 
+  text-decoration: none;   
+}
+.dropdown-content a:hover {
+  color: white;
+  background-color: white; 
+  margin: 10px;
+}
+.navbar-imagen{
+  width: 200px;
+  height: 80px;
+}
+
+}
+/* termina responsive para mobile */
+
+.ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+ul li a:hover{
+  color: red;
+}
+
+/* aca empieza el navbar */
+header{
+  background-color:#9A918F;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+}
+.container-fluid{
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+.navbar-imagen{
+  margin: 10px;
+ 
+}
+.navbar-boton{
+  margin: 10px;
+  padding: 40px;
+  color: black;
+  border-radius: 10px;
+
+}
+.navbar-boton-letras{
+  color: black;
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100px;
+  padding: 20px;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  
+  display: block;
+  color: white;
+  background-color: azure;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+
+footer{
+  background-color: #d9d9d9;
+}
+
+
+.footer-medio{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.footer-medio-abajo{
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+
+}
+
+
+.footer-boton{
+  margin: 10px;
+  padding: 30px;
+}
+
+.footer-final{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #FFFFFF;
+
+}
+
+@media (max-width: 700px) { 
+  footer{
+      background-color: #d9d9d9;
+
+  }
+
+
+  .footer-medio{
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      margin: 20px;
+  }
+
+  .footer-medio-abajo{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+      padding: 10px;
+  }
+
+  .footer-boton{
+      margin: 10px;
+      padding: 30px;
+  }
+
+  .footer-final{
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+  }
+  .footer-medio-derecha{
+      margin: 20px;
+  }
+}
+
+
+#article,#footer{
+  font-size: 20px;
+  background-image: url(../img/cafe-granos.jpg);
+
+  
+
+ 
+
+  background-position: center center;
+
+  
+
+  background-repeat: no-repeat;
+
+  
+
+  background-attachment: fixed;
+
+ 
+
+  background-size: cover;
+
+}
+.container{
+  background-color: #9A918F;
+  height: 200px;
+  text-align: center;
+  margin: 20px;
+}
+
+.TextoSobreNosotros {
+  text-align: center;
+  margin: 20px;
+  padding: 90px;
+}
+
+.containerFotos{
+  background-color: white;
+  height: 350px;
+  content: "";
+  display: flex ;
+  clear: both;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+
+
+.column1 img{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.column2 img{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.column3 img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.column4 img{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.containerDatos {
+   background-color: white;
+    height: 200px;
+    content: "";
+    display: flex ;
+    clear: both;
+    justify-content: space-around;
+    text-align: center;
+    
+  }
+  
+.contactoLucas{
+  background-color: #574C4C;
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  
+}
+
+.contactoSofi{
+  background-color: #574C4C;
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.contactoThomas{
+  background-color: #574C4C;
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  
+  
+}
+
+.contactoFabri{
+  background-color: #574C4C;
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  
+
+  
+}
+
+.nombre{
+  margin: 40px;
+}
+
+
+@media(max-width:700px){
+  .container{
+    background-color: #9A918F;
+    height: 200px;
+    text-align: center;
+    margin: 70px;
+    width: 260px;
+  }
+  
+  .TextoSobreNosotros {
+    text-align: center;
+    margin: 20px;
+    padding: 70px;
+  }
+
+
+  .containerFotos{
+    background-color: white;
+    height: 2000px;
+    flex-direction: column;
+    align-items: center;
+    
+    
+   
+  }
+  
+  
+  
+  .column1 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .column2 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .column3 img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .column4 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .containerDatos {
+    background-color: white;
+     height: 700px;
+     flex-direction: column;
+     justify-content: space-around;
+     text-align: center;
+     margin-left: 40px;
+     
+   }
+   
+ .contactoLucas{
+   background-color: #574C4C;
+   height: 100px;
+   width: 300px;
+   color: white;
+   text-align: center;
+   padding: 5px;
+   
+ }
+ 
+ .contactoSofi{
+   background-color: #574C4C;
+   height: 100px;
+   width: 300px;
+   color: white;
+   text-align: center;
+   padding: 5px;
+ }
+ 
+ .contactoThomas{
+   background-color: #574C4C;
+   height: 100px;
+   width: 300px;
+   color: white;
+   text-align: center;
+   padding: 5px;
+   
+   
+ }
+ 
+ .contactoFabri{
+   background-color: #574C4C;
+   height: 100px;
+   width: 300px;
+   color: white;
+   text-align: center;
+   padding: 5px;
+   
+ 
+   
+ }
+ 
+ .nombre{
+   margin: 40px;
+ }
+ 
+
+
+
+
+
+
+}
+
