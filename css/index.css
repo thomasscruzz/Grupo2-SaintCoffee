@@ -231,7 +231,7 @@ header{
 
     /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
 
-    background-size: cover;
+    background-size: contain;
 }
 
 .section-arriba{
