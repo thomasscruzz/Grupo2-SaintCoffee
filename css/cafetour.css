@@ -213,6 +213,7 @@ body{
     background-image: url(../img/coffeetravel.jpg);
     background-size: 100%;
     background-repeat: repeat;
+    
 }
 
 
@@ -270,11 +271,23 @@ body{
 #section{
     padding: 30px;
     position: relative;
-    left: 25%;
+    
     background-color: rgba(228, 222, 222, 0.8);
     width:790px;
     color:black;
     font-size: larger;
+    height: fit-content;
+}
+
+.help{
+    position: relative;
+    display: flex;
+    left: 25%;
+    width:850px;
+    height: 500px;
+    overflow-y: auto;
+
+
 }
 
 
@@ -493,3 +506,127 @@ footer{
         font-size: 20px;
     }
 }
+
+
+@media all and (max-width: 700px){
+    body{
+        background-image: url(../img/coffeetravel.jpg);
+        background-size: 100%;
+        background-repeat: repeat;
+        height: auto;
+        width: 390px;
+       
+    }
+    
+    
+    .intro{
+        position: relative;
+        background-color: rgba(228, 222, 222, 0.8);
+        color:black;
+        font-size: medium;
+        height: auto;
+        width: auto;
+        left: 0%;
+        margin-top:60px;
+
+        
+    }
+    
+    .descripcion{
+        padding: 30px;
+        position: relative;
+        left: 0%;
+        background-color: rgba(228, 222, 222, 0.8);
+        width:auto;
+        height: auto;
+        color:black;
+        font-size: medium;
+    
+    }
+    
+    .lasVioletas{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .lasViolteas-izquierda-icono{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+
+
+    }
+    
+    .lasVioletas-derecha-descripcion{
+        padding: 3px;
+        
+    }
+    
+    .cafe-tortoni{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .cafeTortoni-derecha-descripcion{
+        padding: 3px;
+        
+    }
+    .cafeTortoni-izquierda-icono{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+
+
+    }
+    
+    .cafe-london{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+    }
+    
+    .cafeLondon-derecha-descripcion{
+        padding: 3px;
+        
+    }
+    
+    .cafeLondon-izquierda-icono{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+
+
+
+    }
+
+    #section{
+        padding: 30px;
+        position: relative;
+        
+        
+        background-color: rgba(228, 222, 222, 0.8);
+        width:340px;
+        
+        color:black;
+        font-size: medium;
+        height: fit-content;
+        
+    }
+    
+    .help{
+        position: relative;
+        display: flex;
+        left: 0%;
+        width:390px;
+        height: auto;
+        overflow-y: auto;
+    
+    
+    }
+}
+
+
+

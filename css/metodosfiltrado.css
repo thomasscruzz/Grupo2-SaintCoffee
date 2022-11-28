@@ -254,6 +254,7 @@ body{
 
 .envoltorio{
     display:inline-flex;
+    
 
 }
 
@@ -290,7 +291,7 @@ body{
     display: flex;
     flex-direction:column;
     
-    width: 800px;
+    width: auto;
     height: 350px;
 }
 
