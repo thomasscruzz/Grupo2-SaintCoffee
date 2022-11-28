@@ -47,91 +47,95 @@ label {                       /*no muestra la etiqueta ☰ */
 
 
 
-@media  (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
-header{
-    background-image: url(../img/cafefondoamarillo2.jpg);
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
+@media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
+    header{
+      background-image: url(../img/cafefondoamarillo.jpg);  
+      padding: 15px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+      position: relative;
+      
+      
+    }
+    
+    input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
+      display:block;
+    }
+    
+    input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+      background: lightgrey; 
+    }
+    
+    label:hover{                /*cambia el color de ☰ */
+    background: grey;
+    }
+    
+    .li1{                         /*elimina el margen  de cada botón */
+      margin: 0px;
+      text-align: left;
+    }
+    
+    label {                      /* dibuja la etiqueta ☰  con formato botón */
+      box-sizing: border-box;
+      display: block;
+      border: 1px solid white;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+      background-color: beige;
+      margin-left:70px;
+    
+    }
+    
+    
+    .ul1{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
+      display: none;
+      background-color:white;
+    }
+    
+    .dropdown {
+      display: inline-block;
+      position: relative; 
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute; 
+      width: 100px;
+      padding: 20px; 
+      overflow: auto; 
+      color: #FFFFFF; 
+      
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+      margin: 25px;
+    } 
+    
+    .dropdown-content a {
+      display: block; 
+      color:white; 
+      padding: 50px;
+      margin: 40px; 
+      text-decoration: none;   
+    }
+    .dropdown-content a:hover {
+      color: white;
+      background-color: white; 
+      margin: 10px;
+    }
+    .navbar-imagen{
+      width: 200px;
+      height: 80px;
+    }
+    
+    }
 
-}
-
-input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
-    display:block;
-}
-
-input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
-    background: lightgrey; 
-}
-
-label:hover{                /*cambia el color de ☰ */
-background: grey;
-}
-
-.li1{                         /*elimina el margen  de cada botón */
-    margin: 0px;
-    text-align: right;
-}
-
-label {                      /* dibuja la etiqueta ☰  con formato botón */
-    box-sizing: border-box;
-    display: block;
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
-    background-color: beige;
-    margin-left: 70px;
-
-}
-
-
-.ul1{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
-    display: none;
-    background-color:white;
-}
-
-.dropdown {
-    display: inline-block;
-    position: relative; 
-}
-.dropdown-content {
-    display: none; 
-    position: absolute; 
-    width: 100px;
-    padding: 20px; 
-    overflow: auto; 
-    color: #FFFFFF; 
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    margin: 25px;
-} 
-
-.dropdown-content a {
-    display: block; 
-    color:white; 
-    padding: 50px;
-    margin: 40px; 
-    text-decoration: none;   
-}
-.dropdown-content a:hover {
-    color: white;
-    background-color: white; 
-    margin: 10px;
-}
-.navbar-imagen{
-    width: 200px;
-    height: 80px;
-}
-
-}
   /* termina responsive para mobile */
 
 .ul1 .li1 a{
@@ -146,11 +150,11 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 /* aca empieza el navbar */
 
 header{
-    background-image: url(../img/cafefondoamarillo.jpg);
+    background-image: url(../img/cafefondoamarillo2.jpg);
     padding: 15px;
     display: flex;
     justify-content: space-around;
-    height: 150px;
+    
     background-size: cover;
 }
 
@@ -550,79 +554,19 @@ footer{
 
 
 @media all and (max-width: 700px){
-    header{
-        background-image: url(../img/cafefondoamarillo2.jpg);
-        padding: 15px;
-        display: flex;
-        justify-content: space-around;
-        height: 220px;
-        background-size: cover;
-    }
     
-    .navbar{
-        display: flex;
-        justify-content: space-around;
+    body{
+        width: auto;
+
     }
-    .container-fluid{
-        display: flex;
-        align-items: center;
-        border-radius: 10px;
-        margin: 10px;
-    }
-    .navbar-imagen{
-        margin: 10px;
-       
-    }
-    .navbar-boton{
-        margin: 10px;
-        padding: 40px;
-        color: black;
-        border-radius: 10px;
-    
-    }
-    .navbar-boton-letras{
-        color: black;
-    }
-    .dropdown {
-        display: inline-block;
-        position: relative;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        width: 100px;
-        padding: 20px;
-        overflow: auto;
-        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-    }
-    .dropdown:hover .dropdown-content {
-        
-        display: block;
-        color: white;
-        background-color: azure;
-    }
-    
-    .dropdown-content a {
-        display: block;
-        color: #000000;
-        padding: 5px;
-        text-decoration: none;
-    }
-    
-    .dropdown-content a:hover {
-        color: #FFFFFF;
-        background-color: #00A4BD;
-    }
-    
-    
+
     
     /* aca empieza el body  */
     
     /* arrcanamos con el section, mirada principal de la pagina */
     
     #section{
-        position: relative;
+        
         display: flex;
         width: auto;
         height: auto;
@@ -723,7 +667,7 @@ footer{
         
         de fondo o si hay problemas para cargarla */
     
-        height: 400px;
+        height: fit-content;
         
     
         
@@ -745,7 +689,7 @@ footer{
     .botonesarticulo{
         display: flex;
         position: relative;
-        left: 44.8%;
+        left: 10%;
         margin-top: 10px;
     
     
