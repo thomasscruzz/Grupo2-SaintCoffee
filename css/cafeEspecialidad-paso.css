@@ -147,11 +147,16 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 
 /* aca empieza el navbar */
 header{
- 
+  background-image: url(../img/Logosaintcoffepng2.jpg); 
+  background-position: center;
+  background-size: cover; 
+  height: 110px;
   padding: 15px;
   display: flex;
   justify-content: space-around;
-  height: 150px;
+  position: relative;
+  
+  
 }
 
 .navbar{
@@ -298,6 +303,18 @@ body{
 /* empieza el card grup mobile */
 
 @media (max-width: 700px){
+
+  header{
+    background-image: url(../img/logomovile.jpg); 
+    background-position: center;
+    background-size: cover; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+    
+  }
   .card-group{
     display: flex;
     width: 110%;

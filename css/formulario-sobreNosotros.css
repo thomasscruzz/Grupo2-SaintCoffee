@@ -145,12 +145,17 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 
 /* aca empieza el navbar */
 header{
-    background-image: url(../img/cafefondoamarillo.jpg);
+    background-image: url(../img/logomovile.jpg); 
+    background-position: center;
+    background-size: cover; 
+    height: 110px;
+    
     padding: 15px;
     display: flex;
     justify-content: space-around;
-    height: 150px;
-    background-size: 100%;
+    position: relative;
+    
+    
 }
 
 .navbar{
