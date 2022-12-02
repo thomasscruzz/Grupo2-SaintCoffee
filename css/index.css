@@ -53,7 +53,6 @@ label {                       /*no muestra la etiqueta ☰ */
       padding: 15px;
       display: flex;
       justify-content: space-around;
-      flex-direction: row-reverse;
       position: relative;
       
       

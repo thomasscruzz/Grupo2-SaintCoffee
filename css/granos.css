@@ -22,7 +22,6 @@ label {                       /*no muestra la etiqueta ☰ */
 .ul1{                           /*muestra los botones con la disposición horizontal para notebook */
 display: flex;
 justify-content: left;
-margin-left:10px;
 padding: 0;
 }
 
@@ -53,7 +52,6 @@ header{
     padding: 15px;
     display: flex;
     justify-content: space-around;
-    flex-direction: row-reverse;
 }
 
 input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
@@ -85,7 +83,6 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
     text-align: center;
     user-select: none;
     background-color: beige;
-    margin-left:70px;
 
 }
 
@@ -116,7 +113,7 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 .dropdown-content a {
     display: block; 
     color:white; 
-    padding: 50px;
+    /* padding: 50px; */
     margin: 40px; 
     text-decoration: none;   
 }
@@ -126,7 +123,6 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
     margin: 10px;
 }
 .navbar-imagen{
-    width: 200px;
     height: 80px;
 }
 

@@ -22,7 +22,6 @@ label {                       /*no muestra la etiqueta ☰ */
 .ul1{                           /*muestra los botones con la disposición horizontal para notebook */
 display: flex;
 justify-content: left;
-margin-left:10px;
 padding: 0;
 }
 
@@ -53,7 +52,6 @@ header{
     padding: 15px;
     display: flex;
     justify-content: space-around;
-    flex-direction: row-reverse;
 }
 
 input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
@@ -70,7 +68,7 @@ background: grey;
 
 .li1{                         /*elimina el margen  de cada botón */
     margin: 0px;
-    text-align: right;
+    text-align: left;
 }
 
 label {                      /* dibuja la etiqueta ☰  con formato botón */
@@ -85,7 +83,6 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
     text-align: center;
     user-select: none;
     background-color: beige;
-    margin-left: 70px;
 }
 
 

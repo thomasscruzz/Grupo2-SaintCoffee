@@ -53,7 +53,7 @@ filter: brightness(110%);
       padding: 15px;
       display: flex;
       justify-content: space-around;
-      flex-direction: row-reverse;
+      
     }
     
     input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
@@ -70,7 +70,7 @@ filter: brightness(110%);
     
     .li1{                         /*elimina el margen  de cada botón */
       margin: 0px;
-      text-align: right;
+      text-align: left;
     }
     
     label {                      /* dibuja la etiqueta ☰  con formato botón */
@@ -85,7 +85,6 @@ filter: brightness(110%);
       text-align: center;
       user-select: none;
       background-color: beige;
-      margin-left:70px;
     
     }
     
@@ -126,7 +125,6 @@ filter: brightness(110%);
       margin: 10px;
     }
     .navbar-imagen{
-      width: 200px;
       height: 80px;
     }
     
