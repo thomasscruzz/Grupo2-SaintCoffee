@@ -221,12 +221,17 @@ header{
 
 #section{
   display: flex;
+  
   justify-content: space-between;
   margin: 2px;
   padding: 5px;
   color: rgb(255, 255, 255);
   font-size: larger;
 }
+
+
+
+
 .section-izquierda{
     margin: 50px;
     padding: 50px;
@@ -264,11 +269,52 @@ empieza section mobile */
 /* fin section mobile */
 
 body{
-  background-image: url(../img/cafesdibujo.png);
+  background-image: url(../img/fondoespecialidad.jpg);
   background-size: contain;
-  background-color: rgb(250, 233, 212);
+  background-color: #313131;
+}
+
+.auxiliar{
+  position: relative;
+ 
+  flex-wrap: wrap;
+  height: 800px;
+  width: 1300px;
+  overflow-y:auto;
+  left:15%
+
 
 }
+
+.auxiliar::-webkit-scrollbar-track {
+  border: 1px solid #000;
+  padding: 2px 0;
+  background-color: #404040;
+}
+
+.auxiliar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.auxiliar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #fffafa;
+  border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card-group{
   display: flex;
@@ -303,7 +349,16 @@ body{
 
 /* empieza el card grup mobile */
 
-@media (max-width: 700px){
+@media(max-width: 700px){
+  body{
+    
+    background-image: url(../img/especialidadmovile.jpg);
+    background-size: contain;
+    background-color: #313131;
+  }
+
+
+
 
   header{
     background-image: url(../img/logomovile.jpg); 
@@ -316,6 +371,35 @@ body{
     
     
   }
+  .auxiliar{
+    position: relative;
+    width: 400px;
+    flex-wrap: wrap;
+    left: 10px;
+    
+    overflow-y:auto;
+    
+  
+  
+  }
+  
+  .auxiliar::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+  }
+  
+  .auxiliar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .auxiliar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #fffafa;
+    border: 1px solid #000;
+  }
+
   .card-group{
     display: flex;
     width: 110%;
