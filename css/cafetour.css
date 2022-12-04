@@ -492,7 +492,7 @@ footer{
 
 
     body{
-        background-image: url(../img/coffeetravel.jpg);
+        background-image: url(../img/sobrenosotrosmovile.jpg);
         background-size: 100%;
         background-repeat: repeat;
         height: auto;
@@ -517,7 +517,7 @@ footer{
     .descripcion{
         padding: 30px;
         position: relative;
-        left: 0%;
+        
         background-color: rgba(228, 222, 222, 0.8);
         width:auto;
         height: auto;
@@ -530,6 +530,7 @@ footer{
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
+        
     }
 
     .lasViolteas-izquierda-icono{
@@ -585,12 +586,12 @@ footer{
     }
 
     #section{
-        padding: 30px;
+        width: 414px;
         position: relative;
+        left: 0%;
         
         
-        background-color: rgba(228, 222, 222, 0.8);
-        width:340px;
+        
         
         color:black;
         font-size: medium;
@@ -602,8 +603,8 @@ footer{
 
         position: relative;
         display: inline-flex;
-       
-        
+        left: 0%;
+        width: 414px;
         height: auto;
         overflow-y: auto;
     
