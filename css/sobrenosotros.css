@@ -378,6 +378,9 @@ footer{
   padding: 5px;
   
 }
+.contactoLucas .nombre{
+  font-size: 80%;
+}
 
 
 .contactoSofi{
@@ -387,6 +390,9 @@ footer{
   color: white;
   text-align: center;
   padding: 5px;
+}
+.contactoSofi .nombre{
+  font-size: 80%;
 }
 
 .contactoThomas{
@@ -399,6 +405,9 @@ footer{
   
   
 }
+.contactoThomas .nombre{
+  font-size: 80%;
+}
 
 .contactoFabri{
   background-color: #574C4C;
@@ -408,12 +417,16 @@ footer{
   text-align: center;
   padding: 5px;
   
-
-  
+ 
+}
+.contactoFabri .nombre{
+  font-size: 80%;
 }
 
+
+
 .nombre{
-  margin: 40px;
+  margin: 24px;
 }
 
 body{
@@ -421,6 +434,8 @@ body{
   background-size:100%;
   background-repeat: no-repeat;
 }
+
+
 
 
 @media all and (max-width: 1600px) {
