@@ -7,12 +7,12 @@
 
 
 button{
-border-radius: 10px;
+  border-radius: 10px;
 }
 
 
 input {                        /*no muestra el botón de menu */
-display: none;     
+  display: none;     
 }
 
 label {                       /*no muestra la etiqueta ☰ */
@@ -21,29 +21,29 @@ label {                       /*no muestra la etiqueta ☰ */
 
 
 .ul1{                           /*muestra los botones con la disposición horizontal para notebook */
-display: flex;
+  display: flex;
 
-margin-right:10px;
-padding: 0;
+  margin-right:10px;
+  padding: 0;
 }
 
 
 
 
 .li1 {                     /*determina la propiedad de cada botón*/
-display: block;
-background: lightgrey;
-margin: 10px;
-padding: 10px;
-list-style: none;
-border-bottom: 1px solid grey;
-width: 150px;
-text-align: center;
+  display: block;
+  background: lightgrey;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  width: 150px;
+  text-align: center;
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
 .li1:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
-filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 
@@ -55,6 +55,7 @@ header{
   display: flex;
   justify-content: space-around;
 }
+
 #boton-header{
   display: flex;
   align-items: center;
@@ -258,14 +259,14 @@ empieza section mobile */
     color: rgb(255, 255, 255);
     /* font-size: medium; */
   }
-   .section-izquierda{
-      margin: 10px;
-      padding: 50px;
-      background-color: grey;
-      border-radius: 30px;
-      width: 100%;
-      font-size: 20px;
-      height: fit-content;
+  .section-izquierda{
+    margin: 10px;
+    padding: 50px;
+    background-color: grey;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    height: fit-content;
   } 
 }
 /* fin section mobile */

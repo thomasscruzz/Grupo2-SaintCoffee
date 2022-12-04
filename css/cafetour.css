@@ -12,7 +12,7 @@ button{
 
 
 input {                        /*no muestra el botón de menu */
-display: none;     
+    display: none;     
 }
 
 label {                       /*no muestra la etiqueta ☰ */
@@ -21,29 +21,29 @@ label {                       /*no muestra la etiqueta ☰ */
 
 
 .ul1{                           /*muestra los botones con la disposición horizontal para notebook */
-display: flex;
-justify-content: left;
-margin-top:0;
-padding: 0;
+    display: flex;
+    justify-content: left;
+    margin-top:0;
+    padding: 0;
 }
 
 /* hola */
   
 
 .li1 {                     /*determina la propiedad de cada botón*/
-display: block;
-background: lightgrey;
-margin: 10px;
-padding: 10px;
-list-style: none;
-border-bottom: 1px solid grey;
-width: 150px;
-text-align: center;
+    display: block;
+    background: lightgrey;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    width: 150px;
+    text-align: center;
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
 .li1:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
-filter: brightness(110%);
+    filter: brightness(110%);
 }
 
 
@@ -154,7 +154,8 @@ header{
     position: relative;
     
     
-  }
+}
+
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -214,7 +215,7 @@ header{
 
 
 body{
-    background-image: url(../img/coffeetravel.jpg);
+    background-image: url(../img/fondoespecialidad.jpg);
     background-size: 100%;
     background-repeat: repeat;
     
@@ -234,7 +235,7 @@ body{
 .descripcion{
     padding: 30px;
     position: relative;
-    left: 25%;
+   
     background-color: rgba(228, 222, 222, 0.8);
     width:790px;
     color:black;
@@ -286,13 +287,13 @@ body{
 .help{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     left: 25%;
     width:850px;
     height: 500px;
     overflow-y: auto;
-
-
 }
+
 
 
 /* aca empeiza el footer  */
@@ -375,41 +376,6 @@ footer{
 
 }
 
-@media (max-width: 700px) { 
-    footer{
-        background-color: #d9d9d9;
-       
-    }
-    
-    
-    .footer-medio{
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        margin: 20px;
-    }
-    
-    .footer-medio-abajo{
-        display: flex;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 10px;
-    }
-
-    .footer-boton{
-        margin: 10px;
-        padding: 30px;
-    }
-    
-    .footer-final{
-        display: flex;
-        justify-content: center;
-        font-size: 20px;
-    }
-    .footer-medio-derecha{
-        margin: 20px;
-    }
-}
 
 
 
@@ -477,41 +443,7 @@ footer{
 
 }
 
-@media (max-width: 700px) { 
-    footer{
-        background-color: #d9d9d9;
-       
-    }
-    
-    
-    .footer-medio{
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        margin: 20px;
-    }
-    
-    .footer-medio-abajo{
-        display: flex;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 10px;
-    }
 
-    .footer-boton{
-        margin: 10px;
-        padding: 30px;
-    }
-    
-    .footer-final{
-        display: flex;
-        justify-content: center;
-        font-size: 20px;
-    }
-    .footer-medio-derecha{
-        margin: 20px;
-    }
-}
 
 
 /* aca empeiza el formato responsive para mobile */
@@ -554,7 +486,7 @@ footer{
         position: relative;
         
         
-      }
+    }
 
 
 
@@ -564,7 +496,7 @@ footer{
         background-size: 100%;
         background-repeat: repeat;
         height: auto;
-        width: 390px;
+        
        
     }
     
@@ -667,16 +599,51 @@ footer{
     }
     
     .help{
+
         position: relative;
-        display: flex;
-        left: 0%;
-        width:390px;
+        display: inline-flex;
+       
+        
         height: auto;
         overflow-y: auto;
     
     
     }
-}
 
+
+    footer{
+        background-color: #d9d9d9;
+       
+    }
+    
+    
+    .footer-medio{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin: 20px;
+    }
+    
+    .footer-medio-abajo{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .footer-boton{
+        margin: 10px;
+        padding: 30px;
+    }
+    
+    .footer-final{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .footer-medio-derecha{
+        margin: 20px;
+    }
+}
 
 
