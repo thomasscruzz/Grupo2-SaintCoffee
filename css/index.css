@@ -25,6 +25,10 @@ label {                       /*no muestra la etiqueta ☰ */
     justify-content: left;
     margin-left:10px;
     padding: 0;
+    
+}
+.ul1 a{
+    font-family: Garamond, serif;
 }
 
 
@@ -40,7 +44,9 @@ label {                       /*no muestra la etiqueta ☰ */
     width: 150px;
     text-align: center;
     
+    
 }
+
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
 .li1:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
@@ -114,11 +120,13 @@ label {                       /*no muestra la etiqueta ☰ */
       color: #FFFFFF; 
       
     }
+   
     
     .dropdown:hover .dropdown-content {
       display: block;
       margin: 25px;
     } 
+    
     
     .dropdown-content a {
       display: block; 
@@ -259,6 +267,15 @@ header{
     color: #FFFFFF;
 }
 
+.section-arriba h1{
+    font-size:140%
+}
+
+.section-arriba p{
+    
+    font-size: 110%;
+}
+
 .section-medio-izquierda{
     display: flex;
     justify-content: space-around;
@@ -272,6 +289,10 @@ header{
     font-family: Garamond, serif;
     
 }
+.section-medio-izquierda a{
+    font-family: Garamond, serif;
+}
+
 .section-medio-izquierda-abajo{
     display: flex;
    justify-content: space-around;
@@ -409,6 +430,9 @@ header{
 
 
 }
+.article-medio p{
+    font-size: 90%;
+}
 .botonesarticulo{
  display: flex;
  position: relative;
@@ -434,12 +458,20 @@ header{
     margin-left: 30px;
     border-radius: 5px;
 }
+
+.article-abajo-izquierda p{
+    font-family: Garamond, serif;
+}
 .article-abajo-derecha{
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color:rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     
+    
+}
+.article-abajo-derecha p{
+    font-family: Garamond, serif;
 }
 
 .article-abajo-boton{
@@ -508,6 +540,10 @@ footer{
     font-size: 30px;
     color: #FFFFFF;
 }
+.footer-medio p{
+    font-family: Garamond, serif;
+}
+
 
 .footer-medio-abajo{
     display: flex;
@@ -515,11 +551,15 @@ footer{
     color: #FFFFFF;
 
 }
+.footer-medio-abajo p{
+    font-family: Garamond, serif;
+}
 
 
 .footer-boton{
     margin: 10px;
     padding: 30px;
+    font-family: Garamond, serif;
 }
 
 .footer-final{
@@ -528,6 +568,9 @@ footer{
     font-size: 20px;
     color: #FFFFFF;
 
+}
+.footer-final p{
+    font-family: Garamond, serif;
 }
 
 @media (max-width: 700px) { 
