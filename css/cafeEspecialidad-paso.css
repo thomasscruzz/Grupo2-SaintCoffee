@@ -1,8 +1,8 @@
 *{
   padding: 0px;
   margin: 0px;
-  font-family: 'Brush Script MT', cursive;
   font-size:x-large;   
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -22,9 +22,6 @@ label {                       /*no muestra la etiqueta ☰ */
 
 .ul1{                           /*muestra los botones con la disposición horizontal para notebook */
   display: flex;
-
-  margin-right:10px;
-  padding: 0;
 }
 
 
@@ -57,9 +54,7 @@ header{
 }
 
 #boton-header{
-  display: flex;
-  align-items: center;
-  padding: 50px;
+  padding-left: 50px;
   margin: 40px;
 }
 
@@ -107,11 +102,11 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 }
 .dropdown-content {
   display: none; 
-  position: absolute; 
   width: 100px;
-  padding: 20px; 
+  /* padding: 20px;  */
   overflow: auto; 
   color: #FFFFFF; 
+  position: absolute;
 }
 
 .dropdown:hover .dropdown-content {
