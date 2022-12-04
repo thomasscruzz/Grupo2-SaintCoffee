@@ -1,7 +1,8 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Geneva, Verdana, sans-serif;   
+    font-family: 'Brush Script MT', cursive;
+    font-size:x-large;     
 }
 
 
@@ -47,84 +48,84 @@ filter: brightness(110%);
 
 
 @media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
-header{
-    background-color:#9A918F;
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-}
+    header{
+        background-color:#9A918F;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
 
-input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
-    display:block;
-}
+    input:checked  ~ .ul1{   /*muestra todas el contenido de todas las etiquetas ul */
+        display:block;
+    }
 
-input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
-    background: lightgrey; 
-}
+    input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+        background: lightgrey; 
+    }
 
-label:hover{                /*cambia el color de ☰ */
-background: grey;
-}
+    label:hover{                /*cambia el color de ☰ */
+    background: grey;
+    }
 
-.li1{                         /*elimina el margen  de cada botón */
-    margin: 0px;
-    text-align: left;
-}
+    .li1{                         /*elimina el margen  de cada botón */
+        margin: 0px;
+        text-align: left;
+    }
 
-label {                      /* dibuja la etiqueta ☰  con formato botón */
-    box-sizing: border-box;
-    display: block;
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
-    background-color: beige;
-}
+    label {                      /* dibuja la etiqueta ☰  con formato botón */
+        box-sizing: border-box;
+        display: block;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: beige;
+    }
 
 
-.ul1{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
-    display: none;
-    background-color:white;
-}
+    .ul1{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
+        display: none;
+        background-color:white;
+    }
 
-.dropdown {
-    display: inline-block;
-    position: relative; 
-}
-.dropdown-content {
-    display: none; 
-    position: absolute; 
-    width: 100px;
-    padding: 20px; 
-    overflow: auto; 
-    color: #FFFFFF; 
-}
+    .dropdown {
+        display: inline-block;
+        position: relative; 
+    }
+    .dropdown-content {
+        display: none; 
+        position: absolute; 
+        width: 100px;
+        padding: 20px; 
+        overflow: auto; 
+        color: #FFFFFF; 
+    }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-    margin: 25px;
-} 
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin: 25px;
+    } 
 
-.dropdown-content a {
-    display: block; 
-    color:white; 
-    padding: 50px;
-    margin: 40px; 
-    text-decoration: none;   
-}
-.dropdown-content a:hover {
-    color: white;
-    background-color: white; 
-    margin: 10px;
-}
-.navbar-imagen{
-    width: 200px;
-    height: 80px;
-}
+    .dropdown-content a {
+        display: block; 
+        color:white; 
+        padding: 50px;
+        margin: 40px; 
+        text-decoration: none;   
+    }
+    .dropdown-content a:hover {
+        color: white;
+        background-color: white; 
+        margin: 10px;
+    }
+    .navbar-imagen{
+        width: 200px;
+        height: 80px;
+    }
 
 }
   /* termina responsive para mobile */
@@ -140,12 +141,17 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 
 /* aca empieza el navbar */
 header{
-   
+    background-image: url(../img/Logosaintcoffepng2.jpg); 
+    background-position: center;
+    background-size: cover; 
+    height: 110px;
     padding: 15px;
     display: flex;
     justify-content: space-around;
-    height: 150px;
-}
+    position: relative;
+    
+    
+  }
 
 .navbar{
     display: flex;
@@ -210,42 +216,52 @@ header{
 /* Arrancamos con el section, en total 3, cada uno contendra contenedores .section para la info*/
 
 body{
-    background-image: url(../img/cofee2.png);
-    background-size:50%;
+    background-image: url(../img/fondoespecialidad.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
-    background-color: #ACA5A4;
+    
 }
 
+.prueba{
+    
+    width: fit-content;
+    height: 846px;
 
+    
+
+    overflow-y: auto;
+
+
+}
 
 
 .section1{
     display: flex;
     flex-wrap: wrap;
-    background-color: #ACA5A4;
-    padding: 50px;
-    background-image: url(../img/cofee2.png);
-    background-size:contain;
     
+    padding: 50px;
+       
 }
+
+
 .section3{
     display: flex;
     flex-wrap: wrap;
-    background-color: #ACA5A4;
+    
     padding: 50px;
-    background-image: url(../img/cofee2.png);
-    background-size:37%;
+    
     
 }
 
 .section2{
     display: flex;
     flex-wrap: wrap;
-    background-color: #676362;
+    
     padding: 50px;
-    background-image: url(../img/cofee.png);
-    background-size: contain;
+    
 }
+
+
 
 
 
@@ -341,12 +357,60 @@ footer{
 }
 
 
+
+
+
+@media all and (max-width: 1600px) {
+    header{
+        background-image: url(../img/logosaintcoffeenotebook.jpg); 
+        background-position: center;
+        background-size: cover; 
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        
+        
+    }
+  
+  
+}
+  
+
 @media all and (max-width: 700px){
+    .prueba{
+    
+        width: 400px;
+        height: 740px;
+        
+    
+        
+    
+        overflow-y: auto;
+    
+    
+    }
+    header{
+        background-image: url(../img/logomovile.jpg); 
+        background-position: center;
+        background-size: cover; 
+        
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        
+    }
+
+
+
+
+
     body{
-        background-image: url(../img/cofee2.png);
-        background-size:50%;
+        background-image: url(../img/especialidadmovile.jpg);
+        background-size:contain;
         background-repeat: no-repeat;
-        background-color: #ACA5A4;
+        
     }
     
     
@@ -354,20 +418,15 @@ footer{
     
     .section1{
         
-        background-color: #ACA5A4;
+        
         padding: 50px;
-        background-image: url(../img/cofee2.png);
-        background-size:contain;
+        
         display: flex;
         flex-wrap: wrap;
        
     }
     .section3{
-        
-        background-color: #ACA5A4;
         padding: 50px;
-        background-image: url(../img/cofee2.png);
-        background-size:37%;
         display: flex;
         flex-wrap: wrap;
         
@@ -376,10 +435,9 @@ footer{
     .section2{
         display: flex;
         flex-wrap: wrap;
-        background-color: #676362;
+        
         padding: 50px;
-        background-image: url(../img/cofee.png);
-        background-size: contain;
+        
     }
     
     
@@ -412,6 +470,7 @@ footer{
         
     }
     .pasoapaso{
+       
         margin: 4px;
         padding:15%;
         font-size:larger;
@@ -441,7 +500,8 @@ footer{
         text-align: justify;
         font-size: large;
         border-radius: 10px;
-
+        margin-left: 10%;
+        
     
     }
     

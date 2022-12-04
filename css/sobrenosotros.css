@@ -2,7 +2,8 @@
 *{
   padding: 0px;
   margin: 0px;
-  font-family: Geneva, Verdana, sans-serif;   
+  font-family: 'Brush Script MT', cursive;
+  font-size:x-large;   
 }
 
 button{
@@ -143,11 +144,16 @@ filter: brightness(110%);
 
 /* aca empieza el navbar */
 header{
- 
+  background-image: url(../img/Logosaintcoffepng2.jpg); 
+  background-position: center;
+  background-size: cover; 
+  height: 110px;
   padding: 15px;
   display: flex;
   justify-content: space-around;
-  height: 150px;
+  position: relative;
+  
+  
 }
 
 .navbar{
@@ -302,21 +308,18 @@ footer{
 
 }
 .container{
+  padding: 15px;
   background-color: #9A918F;
   height: 200px;
-  text-align: center;
+  text-align: left;
+  color:white;
   margin: 20px;
 }
 
-.TextoSobreNosotros {
-  text-align: center;
-  margin: 20px;
-  padding: 90px;
-  color: white
-}
+
 
 .containerFotos{
-  background-color: white;
+ 
   
   content: "";
   display: flex ;
@@ -408,8 +411,50 @@ footer{
   margin: 40px;
 }
 
+body{
+  background-image: url(../img/motivos.jpg);
+  background-size:100%;
+  background-repeat: no-repeat;
+}
 
+
+@media all and (max-width: 1600px) {
+  header{
+      background-image: url(../img/logosaintcoffeenotebook.jpg); 
+      background-position: center;
+      background-size: cover; 
+      padding: 15px;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      
+      
+  }
+
+}
 @media(max-width:700px){
+  body{
+    background-image: url(../img/sobrenosotrosmovile.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+
+  }
+
+
+
+
+  header{
+    background-image: url(../img/logomovile.jpg); 
+    background-position: center;
+    background-size: cover; 
+    
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+    
+  }
 
   
   .footer-medio-izquierda{
@@ -438,6 +483,8 @@ footer{
 
   .container{
     background-color: #9A918F;
+    color: white;
+    text-align: left;
     height: 200px;
     text-align: center;
     margin: 70px;
@@ -445,15 +492,11 @@ footer{
     height: fit-content;
   }
   
-  .TextoSobreNosotros {
-    text-align: start;
-    margin: 20px;
-    padding: 30px;
-  }
+
 
 
   .containerFotos{
-    background-color: white;
+    
     flex-direction: column;
     align-items: center;
     margin: 10px;

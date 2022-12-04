@@ -1,17 +1,18 @@
 *{
   padding: 0px;
   margin: 0px;
-  font-family: Geneva, Verdana, sans-serif;  
+  font-family: 'Brush Script MT', cursive;
+  font-size:x-large;   
 }
 
 
 button{
-border-radius: 10px;
+  border-radius: 10px;
 }
 
 
 input {                        /*no muestra el botón de menu */
-display: none;     
+  display: none;     
 }
 
 label {                       /*no muestra la etiqueta ☰ */
@@ -20,29 +21,29 @@ label {                       /*no muestra la etiqueta ☰ */
 
 
 .ul1{                           /*muestra los botones con la disposición horizontal para notebook */
-display: flex;
+  display: flex;
 
-margin-right:10px;
-padding: 0;
+  margin-right:10px;
+  padding: 0;
 }
 
 
 
 
 .li1 {                     /*determina la propiedad de cada botón*/
-display: block;
-background: lightgrey;
-margin: 10px;
-padding: 10px;
-list-style: none;
-border-bottom: 1px solid grey;
-width: 150px;
-text-align: center;
+  display: block;
+  background: lightgrey;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  width: 150px;
+  text-align: center;
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
 .li1:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
-filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 
@@ -54,6 +55,7 @@ header{
   display: flex;
   justify-content: space-around;
 }
+
 #boton-header{
   display: flex;
   align-items: center;
@@ -147,11 +149,16 @@ label {                      /* dibuja la etiqueta ☰  con formato botón */
 
 /* aca empieza el navbar */
 header{
- 
+  background-image: url(../img/Logosaintcoffepng2.jpg); 
+  background-position: center;
+  background-size: cover; 
+  height: 110px;
   padding: 15px;
   display: flex;
   justify-content: space-around;
-  height: 150px;
+  position: relative;
+  
+  
 }
 
 .navbar{
@@ -215,19 +222,26 @@ header{
 
 #section{
   display: flex;
-  justify-content: space-between;
+  
+  
   margin: 2px;
   padding: 5px;
   color: rgb(255, 255, 255);
   font-size: larger;
 }
+
+
+
+
 .section-izquierda{
-    margin: 50px;
-    padding: 50px;
-    background-color: grey;
-    border-radius: 30px;
-    width: 30%;
-    height: 100px;
+ 
+  text-align: left;
+  margin: 50px;
+  padding: 15px;
+  background-color: grey;
+  border-radius: 30px;
+  width: 30%;
+  height: fit-content;
 }
 
 
@@ -245,24 +259,65 @@ empieza section mobile */
     color: rgb(255, 255, 255);
     /* font-size: medium; */
   }
-   .section-izquierda{
-      margin: 10px;
-      padding: 50px;
-      background-color: grey;
-      border-radius: 30px;
-      width: 100%;
-      font-size: 20px;
-      height: fit-content;
+  .section-izquierda{
+    margin: 10px;
+    padding: 50px;
+    background-color: grey;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    height: fit-content;
   } 
 }
 /* fin section mobile */
 
 body{
-  background-image: url(../img/cafesdibujo.png);
+  background-image: url(../img/fondoespecialidad.jpg);
   background-size: contain;
-  background-color: rgb(250, 233, 212);
+  background-color: #313131;
+}
+
+.auxiliar{
+  position: relative;
+ 
+  flex-wrap: wrap;
+  height: 800px;
+  width: 1300px;
+  overflow-y:auto;
+  left:15%
+
 
 }
+
+.auxiliar::-webkit-scrollbar-track {
+  border: 1px solid #000;
+  padding: 2px 0;
+  background-color: #404040;
+}
+
+.auxiliar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.auxiliar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #fffafa;
+  border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card-group{
   display: flex;
@@ -297,7 +352,76 @@ body{
 
 /* empieza el card grup mobile */
 
-@media (max-width: 700px){
+
+
+
+@media all and (max-width: 1600px) {
+  header{
+      background-image: url(../img/logosaintcoffeenotebook.jpg); 
+      background-position: center;
+      background-size: cover; 
+      padding: 15px;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      
+      
+  }
+
+
+}
+
+@media(max-width: 700px){
+  body{
+    
+    background-image: url(../img/especialidadmovile.jpg);
+    background-size: contain;
+    background-color: #313131;
+  }
+
+
+
+
+  header{
+    background-image: url(../img/logomovile.jpg); 
+    background-position: center;
+    background-size: cover; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+    
+  }
+  .auxiliar{
+    position: relative;
+    width: 400px;
+    flex-wrap: wrap;
+    left: 10px;
+    
+    overflow-y:auto;
+    
+  
+  
+  }
+  
+  .auxiliar::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+  }
+  
+  .auxiliar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .auxiliar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #fffafa;
+    border: 1px solid #000;
+  }
+
   .card-group{
     display: flex;
     width: 110%;

@@ -1,7 +1,8 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Geneva, Verdana, sans-serif;   
+    font-family: 'Brush Script MT', cursive;
+    font-size:x-large;     
 }
 
 
@@ -38,6 +39,7 @@ label {                       /*no muestra la etiqueta ☰ */
     border-bottom: 1px solid grey;
     width: 150px;
     text-align: center;
+    
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
@@ -49,7 +51,9 @@ label {                       /*no muestra la etiqueta ☰ */
 
 @media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
     header{
-      background-image: url(../img/cafefondoamarillo.jpg);  
+      background-image: url(../img/logomovile.jpg); 
+      background-position: center;
+      background-size: cover; 
       padding: 15px;
       display: flex;
       justify-content: space-around;
@@ -149,12 +153,19 @@ label {                       /*no muestra la etiqueta ☰ */
 /* aca empieza el navbar */
 
 header{
-    background-image: url(../img/cafefondoamarillo2.jpg);
+    background-image: url(../img/Logosaintcoffepng2.jpg);
+    height: 110px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
     padding: 15px;
     display: flex;
     justify-content: space-around;
     
-    background-size: cover;
+    
 }
 
 .navbar{
@@ -550,9 +561,37 @@ footer{
     }
 }
 
+@media all and (max-width: 1600px) {
+    header{
+        background-image: url(../img/logosaintcoffeenotebook.jpg); 
+        background-position: center;
+        background-size: cover; 
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        
+        
+    }
+
+
+}
+
 
 
 @media all and (max-width: 700px){
+
+    header{
+        background-image: url(../img/logomovile.jpg); 
+        background-position: center;
+        background-size: cover; 
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        
+        
+    }
     
     body{
         width: auto;
