@@ -322,7 +322,7 @@ body{
 
 .card{
   display: flex;
-  justify-content: space-around;
+  
   flex-direction: column;
   margin: 10px;
   border-radius: 20px;
