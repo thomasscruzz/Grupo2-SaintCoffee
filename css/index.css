@@ -265,7 +265,12 @@ header{
     margin: 5px;
     padding: 30px;
     color: #FFFFFF;
+    
 
+}
+.section-medio-izquierda p{
+    font-family: Garamond, serif;
+    
 }
 .section-medio-izquierda-abajo{
     display: flex;
