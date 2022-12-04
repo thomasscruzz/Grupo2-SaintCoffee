@@ -53,7 +53,7 @@ label {                       /*no muestra la etiqueta ☰ */
     filter: brightness(110%);
 }
 
-.cafe-espacialidad-letras{
+.cafe-letras{
     color: black;
     text-decoration: none;
 }
