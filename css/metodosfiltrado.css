@@ -247,7 +247,7 @@ body{
 .section2{
     display: flex;
     flex-wrap: wrap;
-    background-color: #676362;
+    background-color: #000000;
     padding: 50px;
     background-image: url(../img/cofee.png);
     background-size: contain;

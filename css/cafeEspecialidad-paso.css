@@ -222,7 +222,7 @@ header{
 #section{
   display: flex;
   
-  justify-content: space-between;
+  
   margin: 2px;
   padding: 5px;
   color: rgb(255, 255, 255);
@@ -233,12 +233,14 @@ header{
 
 
 .section-izquierda{
-    margin: 50px;
-    padding: 50px;
-    background-color: grey;
-    border-radius: 30px;
-    width: 30%;
-    height: 100px;
+ 
+  text-align: left;
+  margin: 50px;
+  padding: 15px;
+  background-color: grey;
+  border-radius: 30px;
+  width: 30%;
+  height: fit-content;
 }
 
 
