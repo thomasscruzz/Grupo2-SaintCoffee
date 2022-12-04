@@ -291,6 +291,11 @@ body{
     padding: 3px;
     margin: 20px;
 }
+.lasVioletas-izquierda-icono1{
+    
+    margin-top:50px;
+}
+
 
 .cafe-tortoni{
     display: flex;
@@ -417,6 +422,24 @@ body{
     left: 50%;
 
 }
+
+.expo{
+    margin-top: 30px;
+    
+    overflow-x:hidden ;
+    
+    justify-self: flex-start;
+
+}
+
+.inside{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    background-color: black;
+}
+
+
 
 
 
