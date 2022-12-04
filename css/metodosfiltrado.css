@@ -26,6 +26,10 @@ justify-content: left;
 padding: 0;
 }
 
+.ul1 a{
+    font-family: Garamond, serif;
+}
+
 
   
 
@@ -279,6 +283,9 @@ body{
     margin: 4px;
 }
 
+.section-mitad-derecha .titulo p{
+    font-size: xx-large;
+} 
 .titulo{
     margin: 4px;
     padding: 15px;
@@ -297,6 +304,9 @@ body{
     background-color: #d9d9d9;
     border-radius: 10px;
 
+}
+.pasoapaso li{
+    font-family: Garamond, serif;
 }
 
 .section-mitad-izquierda{
@@ -318,7 +328,13 @@ body{
     border-radius: 10px;
 
 }
+.section-abajo li{
+    font-family: Garamond, serif;
+}
 
+.section-abajo h3{
+    font-size: larger;
+}
 
 
 
@@ -338,24 +354,37 @@ footer{
     justify-content: center;
     font-size: 30px;
 }
+.footer-medio p{
+    font-family: Garamond, serif;
+    color: white;
+}
 
 .footer-medio-abajo{
     display: flex;
     justify-content: space-around;
+}
+.footer-medio-abajo p{
+    font-family: Garamond, serif;
+    color: white;
 }
 
 
 .footer-boton{
     margin: 10px;
     padding: 30px;
+    font-family: Garamond, serif;
 }
 
 .footer-final{
     display: flex;
     justify-content: center;
     font-size: 20px;
+    
 }
-
+.footer-final p{
+    font-family: Garamond, serif;
+    color: white;
+}
 
 
 
@@ -469,6 +498,8 @@ footer{
         border-radius: 10px;
         
     }
+
+
     .pasoapaso{
        
         margin: 4px;

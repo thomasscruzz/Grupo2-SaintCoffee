@@ -26,6 +26,9 @@ label {                       /*no muestra la etiqueta ☰ */
     margin-top:0;
     padding: 0;
 }
+.ul1 a{
+    font-family: Garamond, serif;
+}
 
 /* hola */
   
@@ -232,6 +235,13 @@ body{
     font-size: larger;
 }
 
+.intro h2{
+    font-size: 110%;
+}
+.intro h3{
+    font-family: Garamond, serif;
+}
+
 .descripcion{
     padding: 30px;
     position: relative;
@@ -242,10 +252,23 @@ body{
     font-size: larger;
 
 }
+.descripcion h2{
+    font-size: 110%;
+}
+
+.descripcion li{
+    font-family: Garamond, serif;
+}
 
 .lasVioletas{
     display: flex;
     justify-content: space-between;
+}
+.lasVioletas h1{
+    font-size: 130%;
+}
+.lasVioletas p{
+    font-family: Garamond, serif;
 }
 
 .lasVioletas-derecha-descripcion{
@@ -257,6 +280,12 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.cafe-tortoni h1{
+    font-size: 130%;
+}
+.cafe-tortoni p{
+    font-family: Garamond, serif;
+}
 
 .cafeTortoni-derecha-descripcion{
     padding: 3px;
@@ -266,6 +295,13 @@ body{
 .cafe-london{
     display: flex;
     justify-content: space-between;
+}
+.cafe-london h1{
+    font-size: 130%;
+
+}
+.cafe-london p{
+    font-family: Garamond, serif;
 }
 
 .cafeLondon-derecha-descripcion{
@@ -354,6 +390,9 @@ footer{
     font-size: 30px;
     color: #FFFFFF;
 }
+.footer-medio p{
+    font-family: Garamond, serif;
+}
 
 .footer-medio-abajo{
     display: flex;
@@ -361,11 +400,15 @@ footer{
     color: #FFFFFF;
 
 }
+.footer-medio-abajo p{
+    font-family: Garamond, serif;
+}
 
 
 .footer-boton{
     margin: 10px;
     padding: 30px;
+    font-family: Garamond, serif;
 }
 
 .footer-final{
@@ -374,6 +417,9 @@ footer{
     font-size: 20px;
     color: #FFFFFF;
 
+}
+.footer-final p{
+    font-family: Garamond, serif;
 }
 
 
@@ -492,7 +538,7 @@ footer{
 
 
     body{
-        background-image: url(../img/coffeetravel.jpg);
+        background-image: url(../img/sobrenosotrosmovile.jpg);
         background-size: 100%;
         background-repeat: repeat;
         height: auto;
@@ -517,7 +563,7 @@ footer{
     .descripcion{
         padding: 30px;
         position: relative;
-        left: 0%;
+        
         background-color: rgba(228, 222, 222, 0.8);
         width:auto;
         height: auto;
@@ -530,6 +576,7 @@ footer{
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
+        
     }
 
     .lasViolteas-izquierda-icono{
@@ -585,25 +632,26 @@ footer{
     }
 
     #section{
-        padding: 30px;
+        width: 414px;
         position: relative;
+        left: 0%;
         
         
-        background-color: rgba(228, 222, 222, 0.8);
-        width:340px;
+        
         
         color:black;
         font-size: medium;
         height: fit-content;
         
     }
+ 
     
     .help{
 
         position: relative;
         display: inline-flex;
-       
-        
+        left: 0%;
+        width: 414px;
         height: auto;
         overflow-y: auto;
     
