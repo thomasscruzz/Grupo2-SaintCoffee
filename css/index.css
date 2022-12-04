@@ -46,14 +46,19 @@ label {                       /*no muestra la etiqueta ☰ */
     
     
 }
-
+.li1 a{
+    font-family: Garamond, serif;
+}
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
 .li1:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
     filter: brightness(110%);
 }
 
-
+.cafe-letras{
+    color: black;
+    text-decoration: none;
+}
 
 @media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
     header{
