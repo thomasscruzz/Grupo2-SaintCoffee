@@ -5,10 +5,12 @@ window.addEventListener("load", function(){
     let edad = document.querySelector("input.edad");
     let botonEnviar = document.getElementById("botonEnviar")
 
-    formulario.addEventListener("submit", function(e){
-        if(edad.value<=0){
-            this.alert("En el campo edad...No se puede ingresar valores negativos");
+    formulario.addEventListener("submit", function(){
+        
+        if(edad.value < 0){
+            this.prompt("cambiar el valor a uno positivo");
         }
+       
     })
 
     botonEnviar.addEventListener('click', function(){
