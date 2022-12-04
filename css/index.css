@@ -46,7 +46,9 @@ label {                       /*no muestra la etiqueta ☰ */
     
     
 }
-
+.li1 a{
+    font-family: Garamond, serif;
+}
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
 .li1:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
