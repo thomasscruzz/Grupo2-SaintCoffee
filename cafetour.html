@@ -115,12 +115,22 @@
                         </p>    
                         
                         
-                        <a href="https://www.instagram.com/lasvioletasconfiteriaok/" class="li2">Instagram</a>
+                        <a href="https://www.instagram.com/elgatonegrocafe/" class="li2">Instagram</a>
                         
                 </div>
-                
+
             </div>
+            <div class="expo">
+                <button class="botton-left" onclick="plusDis(-1)">&#10094;</button>
+
+                <img class="negro" src="img/negro1.jpg" style="width:500px" height="500px">
+                <img class="negro" src="img/negro2.jpg" style="width:500px" height="500px">
+                <img class="negro" src="img/negro3.jpg" style="width:500px" height="500px">
+                <img class="negro" src="img/negro4.jpg" style="width:500px" height="500px">
             
+                
+                <button class="botton-right" onclick="plusDis(1)">&#10095;</button>
+            </div>            
 
   
             <br>
@@ -144,7 +154,7 @@
                 </div>
             </div>
             <div class="expo">
-                <button class="botton-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="botton-left" onclick="plusDiv(-1)">&#10094;</button>
 
                 <img class="mySlides" src="img/tortoni1.jpg" style="width:500px" height="500px">
                 <img class="mySlides" src="img/tortoni2.jpg" style="width:500px" height="500px">
@@ -152,7 +162,7 @@
                 <img class="mySlides" src="img/tortoni4.jpg" style="width:500px" height="500px">
                 <img class="mySlides" src="img/tortoni5.jpg" style="width:500px" height="500px">
                 
-                <button class="botton-right" onclick="plusDivs(1)">&#10095;</button>
+                <button class="botton-right" onclick="plusDiv(1)">&#10095;</button>
             </div>
             <br>
             <div class="cafe-london">
@@ -176,10 +186,10 @@
             <div class="expo">
                 <button class="botton-left" onclick="plusDivs(-1)">&#10094;</button>
 
-                <img class="mySlides" src="img/londoncity1.jpg" style="width:500px" height="500px">
-                <img class="mySlides" src="img/londoncity2.jpg" style="width:500px" height="500px">
-                <img class="mySlides" src="img/londoncity3.jpg" style="width:500px" height="500px">
-                <img class="mySlides" src="img/londoncity4.jpg" style="width:500px" height="500px">
+                <img class="myLife" src="img/londoncity1.jpg" style="width:500px" height="500px">
+                <img class="myLife" src="img/londoncity2.jpg" style="width:500px" height="500px">
+                <img class="myLife" src="img/londoncity3.jpg" style="width:500px" height="500px">
+                <img class="myLife" src="img/londoncity4.jpg" style="width:500px" height="500px">
             
                 
                 <button class="botton-right" onclick="plusDivs(1)">&#10095;</button>
@@ -207,17 +217,17 @@
                 </div>
             </div>
             <div class="expo">
-                <button class="botton-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="botton-left" onclick="plus(-1)">&#10094;</button>
 
-                <img class="mySlides" src="img/londoncity1.jpg" style="width:500px" height="500px">
-                <img class="mySlides" src="img/londoncity2.jpg" style="width:500px" height="500px">
-                <img class="mySlides" src="img/londoncity3.jpg" style="width:500px" height="500px">
-                <img class="mySlides" src="img/londoncity4.jpg" style="width:500px" height="500px">
-            
+                <img class="violeta" src="img/violetas1.jpg" style="width:500px" height="500px">
+                <img class="violeta" src="img/violetas2.jpg" style="width:500px" height="500px">
+                <img class="violeta" src="img/violetas3.jpg" style="width:500px" height="500px">
+
                 
-                <button class="botton-right" onclick="plusDivs(1)">&#10095;</button>
+                <button class="botton-right" onclick="plus(1)">&#10095;</button>
             </div>
-            <br>            
+
+                     
         </section>
 
         
@@ -249,26 +259,86 @@
 
    <script>
     var slideIndex = 1;
-    showDivs(slideIndex);
+    showDis(slideIndex);
 
-    function plusDivs(n) {
-    showDivs(slideIndex += n);
+    function plusDis(n) {
+        showDis(slideIndex += n);
     }
 
-    function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} ;
-        for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
+    function showDis(n) {
+        var i;
+        var x = document.getElementsByClassName("negro");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+    }
+    </script>
+
+    <script>
+    var slideIndex = 1;
+    showDiv(slideIndex);
+
+    function plusDiv(n) {
+        showDiv(slideIndex += n);
+    }
+
+    function showDiv(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
     }
     </script>
     
     
 
-
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+    
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+    
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("myLife");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length} ;
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+        }
+        </script>
+        
+        <script>
+            var slideIndex = 1;
+            show(slideIndex);
+        
+            function plus(n) {
+                show(slideIndex += n);
+            }
+        
+            function show(n) {
+                var i;
+                var x = document.getElementsByClassName("violeta");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length} ;
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                    }
+                    x[slideIndex-1].style.display = "block";
+            }
+            </script>
+            
+        
 </body>
 </html>
