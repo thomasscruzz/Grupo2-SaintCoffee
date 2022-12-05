@@ -46,15 +46,17 @@ label {                       /*no muestra la etiqueta ☰ */
 
 .li2 {                     /*determina la propiedad de cada botón*/
     display: block;
-    background: rgb(252, 252, 252, 0.5);
+    background: rgb(252, 252, 252);
     margin: 10px;
     padding: 10px;
-    list-style: none;
+    font-style:italic;
+    
     border-bottom: 1px solid grey;
     width: 150px;
     text-align: center;
     border-radius: 10px;
-    font-family: fantasy;
+    color: black;
+    
 }
 
 
@@ -425,20 +427,14 @@ body{
 
 .expo{
     display: inline-flex;
-    margin-top: 30px;
-    
-    overflow-x:hidden ;
-    
-    justify-self: flex-start;
+    margin-left: 15%;
 
+   
 }
 
-.inside{
-    display: flex;
-    height: 350px;
-    width: 350px;
-    background-color: black;
-}
+
+
+
 
 
 
@@ -591,6 +587,8 @@ footer{
 }
 
 @media all and (max-width: 700px){
+
+
     header{
         background-image: url(../img/logomovile.jpg); 
         background-position: center;
@@ -646,7 +644,7 @@ footer{
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        
+        margin-left: 15px;
     }
 
     .lasViolteas-izquierda-icono{
@@ -668,6 +666,7 @@ footer{
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
+        margin-left: 15px;
     }
     
     .cafeTortoni-derecha-descripcion{
@@ -689,6 +688,7 @@ footer{
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
+        margin-left: 15px;
 
     }
     
@@ -713,7 +713,7 @@ footer{
         width: 414px;
         position: relative;
         left: 0%;
-        
+        padding: 1px;
         
         
         
@@ -722,7 +722,19 @@ footer{
         height: fit-content;
         
     }
- 
+    
+    
+    .expo{
+        display: inline-flex;
+        width: 100px;
+        margin-left: 0%;
+       
+
+
+    }
+
+    
+
     
     .help{
 
@@ -770,6 +782,12 @@ footer{
     .footer-medio-derecha{
         margin: 20px;
     }
+
+   
+
+
+
+
 }
 
 
