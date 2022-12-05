@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario café tour</title>
+</head>
+<style>
+     input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+</style>
+<body>
+<h3>Registrate aquí para el café tour</h3>
+
+<div>
+  <div class="errores">
+    <ul>
+
+    </ul>
+  </div>
+  <form class="formulario">
+    <label for="fname">Nombre: </label>
+    <input type="text" class="nombre" name="nombre" placeholder="nombre" required>
+    <label for="fname">Apellido: </label>
+    
+    <input type="text" class="apellido" name="apellido" placeholder="apellido" required>
+    <label for="fname">Edad: </label>
+    
+    <input type="number" class="edad" class="edad"  name="edad" placeholder="edad" required>
+    <br>
+
+    <label for="fname">Presenta alguna discapacidad, haga click: </label>
+    <input type="checkbox" class="fname" name="campo">
+    <br>
+    <label for="lname">Email: </label>
+    <input type="email" class="email" name="lastname" placeholder="email" required>
+
+   
+  
+    <input type="submit" id="botonEnviar" value="Enviar">
+  </form>
+</div>
+<script src="formulario-cafeTour.js"></script>
+</body>
+</html>
