@@ -342,9 +342,12 @@ body{
 /* aca empieza el footer */
 
 footer{
-    background-color: #676362;
-    
-    background-image: url(../img/cofee.png);
+    font-size: 20px;
+    background-image: url(../img/cafe-granos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 
